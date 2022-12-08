@@ -1,0 +1,46 @@
+.PlotCard{
+    width: 350px;
+    background-color: rgba(0, 0, 0, 0.85);
+    color:white;
+    position: fixed;
+    right: 0;
+    top: 0;
+    overflow: hidden;
+    transition: all .4s ease;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transition-property: all;
+    transition: all .4s cubic-bezier(.54,.84,.69,.56);
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+    z-index: 9999999;
+    /* font-family: Nunito Sans; */
+
+}
+
+.PlotBody{
+    margin: 20px;
+    
+}
+
+.plotElement{
+    margin-bottom: 18px;
+   
+}
+.PlotElementHeading{
+    font-size: 16px;
+    letter-spacing: 0.8px;
+    /* text-transform: uppercase; */
+    text-align: left;
+}
+
+.PlotElementBody{
+    font-size: 1rem;
+    letter-spacing: 0.8px;
+    /* text-transform: uppercase; */
+    text-align: left;
+    color: #ffd56d;
+}

@@ -1,10 +1,13 @@
-import PlotsBody from './PlotsBody'
+import PlotsBody from './PlotsBody';
+import PlotCard from './components/PlotCard.js'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <PlotsBody></PlotsBody>
+    <PlotCard></PlotCard>
+    <PlotsBody></PlotsBody>
+     
     </div>
   );
 }

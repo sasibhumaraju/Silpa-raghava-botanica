@@ -1,25 +1,223 @@
+// import React from "react";
+// import map from './assets/map2.jpg'
+// import ImageMapper from 'react-image-mapper';
+// import {TransformComponent, TransformWrapper} from 'react-zoom-pan-pinch'
+// import './PlotsBody.css'
+
+// class PlotsBody extends React.Component{
+
+//    constructor(props){
+//     super(props);
+//     this.state = {
+//         scale : 1,
+//         plotnum : 0,
+
+//         data : [{ sold:false, name: "1", shape: "poly", coords: [0,1000,1000,0,6433,6079,3160,4158], preFillColor: 'rgba(4, 255, 75, 0.5)', },
+               
+//       ],
+
+//         currentindex:0
+//     }
+    
+//    }
+
+   
+//    handleClick=( obj,num, event)=>{
+//     this.setState({currentindex : num});
+//     console.log(num)
+// }
+// run=(  event)=>{
+// this.setState({});
+
+// }
+//     render(){
+//         return(
+//             <div >
+//                 <div className=".Image-Container" >
+//                     <TransformWrapper 
+//                                     maxScale={25}
+//                                     limitToBounds
+//                                     centerOnInit
+                                   
+//                                     centerZoomedOut>
+//                         <TransformComponent>
+//                             <ImageMapper onImageClick={this.run} onClick={this.handleClick} strokeColor={'black'} lineWidth={1} src={map} width={window.innerWidth} imgWidth={21413} map={{
+                   
+//                    name: "my-map",
+//                    areas: [
+//                       ...this.state.data
+                  
+//                    ]
+//                 }} />
+//                 </TransformComponent>
+//                     </TransformWrapper>
+//                 </div>
+//                 {/* <div className="Plot-Container"></div>
+//                 <div className="Plots-logo"></div> */}
+//             </div>
+//         );
+//     }
+// }
+// export default PlotsBody;
+
+
+
 import React from "react";
 import map from './assets/map2.jpg'
-import {TransformComponent, TransformWrapper} from 'react-zoom-pan-pinch'
+import ImageMapper from 'react-image-mapper';
+import plotsDataServices from "./services/plots-data.services";
 import './PlotsBody.css'
+import { MapInteractionCSS } from 'react-map-interaction';
+import {TransformComponent, TransformWrapper} from 'react-zoom-pan-pinch'
+class MyMap extends React.Component{
 
-class PlotsBody extends React.Component{
+constructor(props){
+    super(props);
+   
+    this.state = {
+        value: {
+            scale: 1,
+            translation: { x: 0, y: 0 },
+          },
+        scale : 1,
+        plotnum : 0,
 
+        data : [{ sold:false, name: "1", shape: "poly", coords: [100,100,0,450,725,450,725,0], preFillColor: 'rgba(4, 255, 75, 0.5)', },
+                {sold:false, name: "2", shape: "poly", coords: [725,0,725,450,1094,450,1094,0], preFillColor: 'rgba(4, 255, 75, 0.5)',  },
+                {sold:false, name: "3", shape: "poly", coords: [1094,0,1094,450,1419,450,1419,0], preFillColor: 'rgba(4, 255, 75, 0.5)', },
+                {sold:false, name: "4", shape: "poly", coords: [1419,0,1419,450,2615,450,2615,0], preFillColor:  'rgba(4, 255, 75, 0.5)',  },
+                {sold:false, name: "5", shape: "poly", coords: [1419,450,2615,450,2615,850,1419,], preFillColor:  'rgba(4, 255, 75, 0.5)',  },
+                {sold:false, name: "5", shape: "poly", coords: [1419,450,2615,450,2615,850,1419,], preFillColor:  'rgba(4, 255, 75, 0.5)',  },
+                {  sold:false, name: "5", shape: "poly", coords: [7033,5042,7089,5025,7099,5053,7043,5069], preFillColor:  'rgba(255, 0, 0, 0.2)',  },
+      ],
+
+        currentindex:0
+    }
+}
+    zoomin=()=>{
+    //  this.setState(p=>{
+    //     p + 2
+    // })
+    let prev = this.state.scale
+
+    this.setState( { scale : prev + 0.1 } )
+    }
+
+    zoomout = () =>{
+        let prev = this.state.scale
+
+        this.setState( { scale : prev - 0.2 } )
+    }
+
+    handleClick=( obj,num, event)=>{
+        this.setState({currentindex : num});
+        console.log(num)
+}
+run=(  event)=>{
+    this.setState({});
+
+}
+soldit = () =>{
+    let s = this.state
+    let i = this.state.currentindex
+  
+ let newstate = this.state.data.map((v)=>{
+        return (v.name == `${i + 1}`)?  {...v, sold : true,preFillColor: 'rgba(0, 0, 0, 0.5)' } : v;
+       })
+    this.setState(c => ({data : [...newstate]}))
+   
+   
+}
+ 
     render(){
+
+        const m = {
+            'available' : true,
+            'map': {
+                'available':true,
+               'coords':[100,200,400,500],
+               'name':'22',
+               'shape':'poly'
+            }
+        }
+
+        plotsDataServices.addPlotsData(m);
+
+
+        var w = window.innerWidth
+        console.log(w)
+        console.log(this.state.scale)
         return(
-            <div className="Image-Container" >
-                <TransformWrapper defaultScale={1}
-                  maxScale={25}
-                  
-                  centerOnInit
-                  initialPositionX={2000}
-                  centerZoomedOut>
-                    <TransformComponent>
-            <img   src={map}></img>
-            </TransformComponent>
-            </TransformWrapper>
+            <div>
+              
+           
+                     
+       
+                <div className="container"  > 
+                <div className="image-container"  style={{   transform: `scale(${this.state.scale})` }} >
+                {/* <TransformWrapper 
+              velocityAnimation={{disabled:true}}
+              pinch={{disabled:true}}
+                                    maxScale={25}
+                                    limitToBounds
+                                    centerOnInit
+                                    
+    
+                                    centerZoomedOut>
+                        <TransformComponent
+                        > */}
+                            <MapInteractionCSS
+                           value={this.state.value}
+                       
+                           onChange={(value) =>{
+
+                             var k = null
+                             if(value.scale === 1)
+                             {
+                                this.setState(
+                          
+                                    { value: {...value,translation: { x: 0, y: 0 }}})
+                             }
+                           
+                             else
+                            {
+                                this.setState(
+                          
+                                    { value: {...value}})
+                            }
+                           }
+                           } 
+                             disablePan={false}  maxScale={15} minScale={1} 
+         >
+                <ImageMapper 
+               active={false}
+                onImageClick={this.run} onClick={this.handleClick} strokeColor={'black'} lineWidth={0.0001} src={map}    width={window.innerWidth} imgWidth={12413} map={{
+                   
+                 name: "my-map",
+                 areas: [
+                    ...this.state.data
+                
+                 ]
+              }}
+              
+              />   
+              </MapInteractionCSS>
+              {/* </TransformComponent>
+              </TransformWrapper> */}
+              </div>
+              </div>
+          
+            
+             
+
+         {/* <div className="plot-model">
+            <h1>{this.state.data[this.state.currentindex].name}</h1>
+           <h1> {this.state.data[this.state.currentindex].sold? 'sold' : 'notsold' }</h1>
+            <button onClick={this.soldit} >sold it</button>
+              </div> */}
             </div>
         );
     }
 }
-export default PlotsBody;
+
+export default MyMap;
