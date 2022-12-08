@@ -65,32 +65,29 @@
 import React from "react";
 import map from './assets/map2.jpg'
 import ImageMapper from 'react-image-mapper';
-import plotsDataServices from "./services/plots-data.services";
+import plotsDataServices
+ from "./services/plots-data.services";
+ import PlotCard from './components/PlotCard.js'
 import './PlotsBody.css'
+import A from './list.js'
 import { MapInteractionCSS } from 'react-map-interaction';
 import {TransformComponent, TransformWrapper} from 'react-zoom-pan-pinch'
 class MyMap extends React.Component{
 
 constructor(props){
     super(props);
-   
+   this.props={
+    prevScale : 1
+   }
     this.state = {
+        prevScale : 1,
         value: {
             scale: 1,
             translation: { x: 0, y: 0 },
           },
         scale : 1,
         plotnum : 0,
-
-        data : [{ sold:false, name: "1", shape: "poly", coords: [100,100,0,450,725,450,725,0], preFillColor: 'rgba(4, 255, 75, 0.5)', },
-                {sold:false, name: "2", shape: "poly", coords: [725,0,725,450,1094,450,1094,0], preFillColor: 'rgba(4, 255, 75, 0.5)',  },
-                {sold:false, name: "3", shape: "poly", coords: [1094,0,1094,450,1419,450,1419,0], preFillColor: 'rgba(4, 255, 75, 0.5)', },
-                {sold:false, name: "4", shape: "poly", coords: [1419,0,1419,450,2615,450,2615,0], preFillColor:  'rgba(4, 255, 75, 0.5)',  },
-                {sold:false, name: "5", shape: "poly", coords: [1419,450,2615,450,2615,850,1419,], preFillColor:  'rgba(4, 255, 75, 0.5)',  },
-                {sold:false, name: "5", shape: "poly", coords: [1419,450,2615,450,2615,850,1419,], preFillColor:  'rgba(4, 255, 75, 0.5)',  },
-                {  sold:false, name: "5", shape: "poly", coords: [7033,5042,7089,5025,7099,5053,7043,5069], preFillColor:  'rgba(255, 0, 0, 0.2)',  },
-      ],
-
+         currentData : {},
         currentindex:0
     }
 }
@@ -110,8 +107,8 @@ constructor(props){
     }
 
     handleClick=( obj,num, event)=>{
-        this.setState({currentindex : num});
-        console.log(num)
+        this.setState({currentData : obj});
+        console.log(obj.name)
 }
 run=(  event)=>{
     this.setState({});
@@ -131,17 +128,14 @@ soldit = () =>{
  
     render(){
 
-        const m = {
-            'available' : true,
-            'map': {
-                'available':true,
-               'coords':[100,200,400,500],
-               'name':'22',
-               'shape':'poly'
-            }
-        }
+        // A.map((v)=>{
+        //     plotsDataServices.addPlotsData(v);
+        // })
 
-        plotsDataServices.addPlotsData(m);
+        // const v = {
+        //     'availability':true
+        // }
+        // plotsDataServices.addPlotsData(v);
 
 
         var w = window.innerWidth
@@ -170,9 +164,15 @@ soldit = () =>{
                            value={this.state.value}
                        
                            onChange={(value) =>{
+                            if(this.state.prevScale > value.scale)
+                            {
+                                this.setState(
+                          
+                                    { value: {...value,translation: { x: 0, y: 0 },scale:1}})
+                            }
 
-                             var k = null
-                             if(value.scale === 1)
+                           
+                           else  if(value.scale === 1)
                              {
                                 this.setState(
                           
@@ -185,17 +185,21 @@ soldit = () =>{
                           
                                     { value: {...value}})
                             }
+                            this.state.prevScale = value.scale;
                            }
                            } 
                              disablePan={false}  maxScale={15} minScale={1} 
          >
                 <ImageMapper 
                active={false}
-                onImageClick={this.run} onClick={this.handleClick} strokeColor={'black'} lineWidth={0.0001} src={map}    width={window.innerWidth} imgWidth={12413} map={{
+                onImageClick={this.run} onClick={this.handleClick} strokeColor={'black'} lineWidth={0.0001} src={map}    width={window.innerWidth > 1125?  window.innerWidth : 1125} imgWidth={12413} map={{
                    
                  name: "my-map",
                  areas: [
-                    ...this.state.data
+                    // ...this.state.data
+                    ...A.map((v)=>{
+                       return {...v,preFillColor: 'rgba(4, 255, 75, 0.25)'}
+                    })
                 
                  ]
               }}
@@ -207,7 +211,7 @@ soldit = () =>{
               </div>
               </div>
           
-            
+              <PlotCard PlotNum={this.state.currentData.name}></PlotCard>
              
 
          {/* <div className="plot-model">

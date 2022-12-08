@@ -2,6 +2,12 @@ import React from "react";
 import './PlotsCard.css';
 
 class PlotCard extends React.Component {
+    static defaultProps = {
+        PlotNum : 0,
+        Facing : 'east',
+        Dimension : '54*77',
+
+    }
 
     render(){
         return(
@@ -9,7 +15,7 @@ class PlotCard extends React.Component {
                 <div className="PlotBody">
                     <div className="plotElement"> 
                         <div className="PlotElementHeading">Plot No</div>
-                        <div className="PlotElementBody">141</div>
+                        <div className="PlotElementBody">{this.props.PlotNum}</div>
                         </div>
                     <div className="plotElement"> 
                         <div className="PlotElementHeading">Facing    </div>
