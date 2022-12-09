@@ -3,9 +3,13 @@ import './PlotsCard.css';
 
 class PlotCard extends React.Component {
     static defaultProps = {
+        Available : false,
         PlotNum : 0,
         Facing : 'east',
-        Dimension : '54*77',
+        Dimension : '0',
+        Size:'0'
+
+
 
     }
 
@@ -19,19 +23,19 @@ class PlotCard extends React.Component {
                         </div>
                     <div className="plotElement"> 
                         <div className="PlotElementHeading">Facing    </div>
-                        <div className="PlotElementBody">east</div>
+                        <div className="PlotElementBody">{this.props.Facing}</div>
                         </div>
                     <div className="plotElement"> 
                         <div className="PlotElementHeading">Dimensions</div>
-                        <div className="PlotElementBody">42*67</div>
+                        <div className="PlotElementBody">{this.props.Dimension}</div>
                         </div>
                     <div className="plotElement"> 
                         <div className="PlotElementHeading">Size      </div>
-                        <div className="PlotElementBody">344</div>
+                        <div className="PlotElementBody">{this.props.Size}</div>
                         </div>
                     <div className="plotElement"> 
                         <div className="PlotElementHeading">Status      </div>
-                        <div className="PlotElementBody"></div>
+                        <div className="PlotElementBody">`{this.props.Available? "Available" : "Sold"}`</div>
                         </div>
                   </div>
             </div>
