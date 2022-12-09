@@ -92,7 +92,7 @@ constructor(props){
   
 
     handleClick=( obj)=>{
-        alert('clicked')
+        // alert('clicked')
         this.setState({currentData : obj});
         console.log(obj.name);
           }
@@ -207,9 +207,9 @@ soldit = () =>{
                                 return {...v,preFillColor: 'rgba(4, 255, 75, 0.25)'}
                                 })]    }}  
     	// onLoad={() => this.load()}
-    	onClick={area => this.handleClick(area)}
-    	// onMouseEnter={area => this.enterArea(area)}
-    	// onMouseLeave={area => this.leaveArea(area)}
+    	// onClick={area => this.handleClick(area)}
+    	onMouseEnter={area => this.handleClick(area)}
+    	// onMouseLeave={area => this.handleClick(area)}
     	// onMouseMove={(area, _, evt) => this.moveOnArea(area, evt)}
     	// onImageClick={evt => this.clickedOutside(evt)}
     	// onImageMouseMove={evt => this.moveOnImage(evt)}
