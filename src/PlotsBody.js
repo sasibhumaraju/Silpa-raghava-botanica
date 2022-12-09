@@ -64,7 +64,7 @@
 
 import React from "react";
 import map from './assets/map2.jpg'
-import ImageMapper from 'react-image-mapper';
+import ImageMapper from 'react-img-mapper';
 import plotsDataServices
  from "./services/plots-data.services";
  import PlotCard from './components/PlotCard.js'
@@ -92,7 +92,7 @@ constructor(props){
   
 
     handleClick=( obj)=>{
-        // alert('clicked')
+       console.log("entered")
         this.setState({currentData : obj});
         console.log(obj.name);
           }
@@ -100,7 +100,6 @@ constructor(props){
             run=(  event)=>{
                 alert('clicked')
                 // this.setState({});
-
             }
 
 
@@ -198,7 +197,7 @@ soldit = () =>{
 
 
 <ImageMapper src={map}
-          width={window.innerWidth > 1125?  window.innerWidth : 1125} 
+         width={window.innerWidth > 1125?  window.innerWidth : 1125} 
          imgWidth={12413} 
           map={{ name: "my-map",
                        areas: [
@@ -209,7 +208,10 @@ soldit = () =>{
     	// onLoad={() => this.load()}
     	onClick={area => this.handleClick(area)}
     	// onMouseEnter={area => this.handleClick(area)}
-    	onMouseLeave={area => this.handleClick(area)}
+    	// onMouseLeave={area => this.handleClick(area)}
+        onMouseDown={area => this.handleClick(area)}
+        onTouchEnd ={area => this.handleClick(area)}
+        // onMouseUp={area => this.handleClick(area)}
     	// onMouseMove={(area, _, evt) => this.moveOnArea(area, evt)}
     	// onImageClick={evt => this.clickedOutside(evt)}
     	// onImageMouseMove={evt => this.moveOnImage(evt)}
