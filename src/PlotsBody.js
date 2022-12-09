@@ -38,7 +38,7 @@ class MyMap extends React.Component {
         return(
             <div>
             <div className="container"       > 
-            <PrismaZoom >
+            {/* <PrismaZoom > */}
                 <div className="image-container"  >
                 {/* <TransformWrapper 
             //   velocityAnimation={{disabled:true}}
@@ -50,7 +50,7 @@ class MyMap extends React.Component {
                                     wheel={{touchPadDisabled:true}}
                                     centerZoomedOut>
                       */}
-                            {/* <MapInteractionCSS
+                            <MapInteractionCSS
                            value={this.state.value}
                        
                            onChange={(value) =>{
@@ -79,7 +79,7 @@ class MyMap extends React.Component {
                            }
                            } 
                              disablePan={false}  maxScale={15} minScale={1} 
-         > */}
+         >
        
             {/* <TransformComponent
                         > */}
@@ -96,11 +96,11 @@ class MyMap extends React.Component {
     />           
      {/* </TransformComponent> */}
    
-              {/* </MapInteractionCSS> */}
+              </MapInteractionCSS>
              
               {/* </TransformWrapper> */}
               </div>
-              </PrismaZoom >
+              {/* </PrismaZoom > */}
               </div>
           
              ` {this.state.active? card  : null}   `
