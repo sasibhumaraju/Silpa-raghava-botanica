@@ -91,7 +91,7 @@ constructor(props){
 }
   
 
-    handleClick=( obj,num, event)=>{
+    handleClick=( obj)=>{
         alert('clicked')
         this.setState({currentData : obj});
         console.log(obj.name);
@@ -180,7 +180,7 @@ soldit = () =>{
                            } 
                              disablePan={false}  maxScale={15} minScale={1} 
          >
-                <ImageMapper 
+                {/* <ImageMapper 
                 active
                 onImageClick={this.run}
                 onClick={this.handleClick} 
@@ -194,7 +194,26 @@ soldit = () =>{
                                 // ...this.state.data
                                 ...A.map((v)=>{
                                 return {...v,preFillColor: 'rgba(4, 255, 75, 0.25)'}
-                                })]    }}   />   
+                                })]    }}   />    */}
+
+
+<ImageMapper src={map}
+          width={window.innerWidth > 1125?  window.innerWidth : 1125} 
+         imgWidth={12413} 
+          map={{ name: "my-map",
+                       areas: [
+                                // ...this.state.data
+                                ...A.map((v)=>{
+                                return {...v,preFillColor: 'rgba(4, 255, 75, 0.25)'}
+                                })]    }}  
+    	// onLoad={() => this.load()}
+    	onClick={area => this.handleClick(area)}
+    	// onMouseEnter={area => this.enterArea(area)}
+    	// onMouseLeave={area => this.leaveArea(area)}
+    	// onMouseMove={(area, _, evt) => this.moveOnArea(area, evt)}
+    	// onImageClick={evt => this.clickedOutside(evt)}
+    	// onImageMouseMove={evt => this.moveOnImage(evt)}
+    />           
               </MapInteractionCSS>
               {/* </TransformComponent>
               </TransformWrapper> */}
