@@ -98,6 +98,7 @@ constructor(props){
           }
 
             run=(  event)=>{
+                alert('clicked')
                 // this.setState({});
 
             }
@@ -180,20 +181,20 @@ soldit = () =>{
                              disablePan={false}  maxScale={15} minScale={1} 
          >
                 <ImageMapper 
-               active
-                onImageClick={this.run} onClick={this.handleClick} strokeColor={'black'} lineWidth={0.0001} src={map}    width={window.innerWidth > 1125?  window.innerWidth : 1125} imgWidth={12413} map={{
-                   
-                 name: "my-map",
-                 areas: [
-                    // ...this.state.data
-                    ...A.map((v)=>{
-                       return {...v,preFillColor: 'rgba(4, 255, 75, 0.25)'}
-                    })
-                
-                 ]
-              }}
-              
-              />   
+                active
+                onImageClick={this.run}
+                onClick={this.handleClick} 
+                strokeColor={'black'} 
+                lineWidth={0.0001} 
+                src={map}    
+                width={window.innerWidth > 1125?  window.innerWidth : 1125} 
+                imgWidth={12413} 
+                map={{ name: "my-map",
+                       areas: [
+                                // ...this.state.data
+                                ...A.map((v)=>{
+                                return {...v,preFillColor: 'rgba(4, 255, 75, 0.25)'}
+                                })]    }}   />   
               </MapInteractionCSS>
               {/* </TransformComponent>
               </TransformWrapper> */}
