@@ -76,9 +76,7 @@ class MyMap extends React.Component{
 
 constructor(props){
     super(props);
-   this.props={
-    prevScale : 1
-   }
+  
     this.state = {
         prevScale : 1,
         value: {
@@ -91,29 +89,20 @@ constructor(props){
         currentindex:0
     }
 }
-    zoomin=()=>{
-    //  this.setState(p=>{
-    //     p + 2
-    // })
-    let prev = this.state.scale
-
-    this.setState( { scale : prev + 0.1 } )
-    }
-
-    zoomout = () =>{
-        let prev = this.state.scale
-
-        this.setState( { scale : prev - 0.2 } )
-    }
+  
 
     handleClick=( obj,num, event)=>{
+        alert('clicked')
         this.setState({currentData : obj});
-        console.log(obj.name)
-}
-run=(  event)=>{
-    this.setState({});
+        console.log(obj.name);
+          }
 
-}
+            run=(  event)=>{
+                // this.setState({});
+
+            }
+
+
 soldit = () =>{
     let s = this.state
     let i = this.state.currentindex

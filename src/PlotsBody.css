@@ -47,13 +47,14 @@
 
 .image-container{
     /* width: 100vw; */
+    
     height: 100vh;
     scale: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color:#0a3600;
-    z-index: -999998;
+    z-index: -999;
     /* background-image: url('https://i.pinimg.com/originals/89/9d/da/899dda241eca5e959d9d945f45aba682.gif'); */
 }
   /* .image-container{
@@ -77,6 +78,9 @@
 } */
 
 .container {
+  top: 0;
+  left: 0;
+  position: fixed;
   width: 100vw;
   height:  100vh;
   color:rgba(255, 0, 0, 0.2);
@@ -90,7 +94,7 @@
     place-self: center;
     justify-self: center;
     background-color:#0a3600;
-    z-index: -999999;
+    z-index: -999;
    
    
     }
