@@ -207,9 +207,9 @@ soldit = () =>{
                                 return {...v,preFillColor: 'rgba(4, 255, 75, 0.25)'}
                                 })]    }}  
     	// onLoad={() => this.load()}
-    	// onClick={area => this.handleClick(area)}
-    	onMouseEnter={area => this.handleClick(area)}
-    	// onMouseLeave={area => this.handleClick(area)}
+    	onClick={area => this.handleClick(area)}
+    	// onMouseEnter={area => this.handleClick(area)}
+    	onMouseLeave={area => this.handleClick(area)}
     	// onMouseMove={(area, _, evt) => this.moveOnArea(area, evt)}
     	// onImageClick={evt => this.clickedOutside(evt)}
     	// onImageMouseMove={evt => this.moveOnImage(evt)}
