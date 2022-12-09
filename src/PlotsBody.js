@@ -191,7 +191,7 @@ soldit = () =>{
                              disablePan={false}  maxScale={15} minScale={1} 
          >
                 <ImageMapper 
-               active={false}
+               active
                 onImageClick={this.run} onClick={this.handleClick} strokeColor={'black'} lineWidth={0.0001} src={map}    width={window.innerWidth > 1125?  window.innerWidth : 1125} imgWidth={12413} map={{
                    
                  name: "my-map",
