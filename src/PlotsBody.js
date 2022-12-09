@@ -138,7 +138,7 @@ soldit = () =>{
                      
        
                 <div className="container"       > 
-                <div className="image-container"  style={{   transform: `scale(${this.state.scale})` }} >
+                <div className="image-container"  >
                 {/* <TransformWrapper 
             //   velocityAnimation={{disabled:true}}
               pinch={{disabled:true}}
@@ -149,15 +149,15 @@ soldit = () =>{
                                     wheel={{touchPadDisabled:true}}
                                     centerZoomedOut>
                       */}
-                            {/* <MapInteractionCSS
+                            <MapInteractionCSS
                            value={this.state.value}
                        
                            onChange={(value) =>{
-                            if(this.state.prevScale > value.scale)
+                            if(value.scale < 5 && this.state.prevScale > value.scale)
                             {
-                                this.setState(
+                                // this.setState(
                           
-                                    { value: {...value,translation: { x: 0, y: 0 },scale:1}})
+                                //     { value: {...value,translation: { x: 0, y: 0 },scale:1}})
                             }
 
                            
@@ -178,14 +178,8 @@ soldit = () =>{
                            }
                            } 
                              disablePan={false}  maxScale={15} minScale={1} 
-         > */}
-         <PrismaZoom 
-          
-          
-         
-           
-          
-           >
+         >
+         {/* <PrismaZoom > */}
             {/* <TransformComponent
                         > */}
                 {/* <ImageMapper 
@@ -208,13 +202,13 @@ soldit = () =>{
 <ImageMapper src={map}
         // responsive={true}
         lineWidth={0.00001} 
-         width={window.innerWidth > 1125?  window.innerWidth : 1125} 
+         width={ window.innerWidth > 1125? window.innerWidth : 1125} 
          imgWidth={12413} 
           map={{ name: "my-map",
                        areas: [
                                 // ...this.state.data
                                 ...A.map((v)=>{
-                                return {...v,preFillColor: 'rgba(4, 255, 75, 0.25)'}
+                                return {...v,preFillColor: 'rgba(4, 255, 75, 0.5)'}
                                 })]    }}  
     	// onLoad={() => this.load()}
     	onClick={area => this.handleClick(area)}
@@ -228,8 +222,8 @@ soldit = () =>{
     	// onImageMouseMove={evt => this.moveOnImage(evt)}
     />           
      {/* </TransformComponent> */}
-     </PrismaZoom >
-              {/* </MapInteractionCSS> */}
+     {/* </PrismaZoom > */}
+              </MapInteractionCSS>
              
               {/* </TransformWrapper> */}
               </div>
