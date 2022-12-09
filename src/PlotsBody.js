@@ -70,6 +70,7 @@ import plotsDataServices
  import PlotCard from './components/PlotCard.js'
 import './PlotsBody.css'
 import A from './list.js'
+import PrismaZoom from 'react-prismazoom'
 import { MapInteractionCSS } from 'react-map-interaction';
 import {TransformComponent, TransformWrapper} from 'react-zoom-pan-pinch'
 class MyMap extends React.Component{
@@ -136,20 +137,19 @@ soldit = () =>{
            
                      
        
-                <div className="container"  > 
+                <div className="container"       > 
                 <div className="image-container"  style={{   transform: `scale(${this.state.scale})` }} >
                 {/* <TransformWrapper 
-              velocityAnimation={{disabled:true}}
+            //   velocityAnimation={{disabled:true}}
               pinch={{disabled:true}}
                                     maxScale={25}
                                     limitToBounds
                                     centerOnInit
                                     
-    
+                                    wheel={{touchPadDisabled:true}}
                                     centerZoomedOut>
-                        <TransformComponent
-                        > */}
-                            <MapInteractionCSS
+                      */}
+                            {/* <MapInteractionCSS
                            value={this.state.value}
                        
                            onChange={(value) =>{
@@ -178,7 +178,16 @@ soldit = () =>{
                            }
                            } 
                              disablePan={false}  maxScale={15} minScale={1} 
-         >
+         > */}
+         <PrismaZoom 
+          
+          
+         
+           
+          
+           >
+            {/* <TransformComponent
+                        > */}
                 {/* <ImageMapper 
                 active
                 onImageClick={this.run}
@@ -197,6 +206,8 @@ soldit = () =>{
 
 
 <ImageMapper src={map}
+        // responsive={true}
+        lineWidth={0.00001} 
          width={window.innerWidth > 1125?  window.innerWidth : 1125} 
          imgWidth={12413} 
           map={{ name: "my-map",
@@ -216,9 +227,11 @@ soldit = () =>{
     	// onImageClick={evt => this.clickedOutside(evt)}
     	// onImageMouseMove={evt => this.moveOnImage(evt)}
     />           
-              </MapInteractionCSS>
-              {/* </TransformComponent>
-              </TransformWrapper> */}
+     {/* </TransformComponent> */}
+     </PrismaZoom >
+              {/* </MapInteractionCSS> */}
+             
+              {/* </TransformWrapper> */}
               </div>
               </div>
           
