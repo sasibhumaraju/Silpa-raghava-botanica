@@ -17,9 +17,25 @@
     outline: none;
     box-sizing: border-box;
     z-index: 9999999;
-    /* font-family: Nunito Sans; */
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    transition: 1s;
+    animation-duration: 1s;
+  animation-name: slidein;
 
 }
+
+
+@keyframes slidein {
+    from {
+      right: -350px;
+      top: 0;
+    }
+  
+    to {
+        right: 0;
+        top: 0;
+    }
+  }
 
 .PlotBody{
     margin: 20px;

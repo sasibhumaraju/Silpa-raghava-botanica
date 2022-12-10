@@ -86,12 +86,12 @@ class MyMap extends React.Component {
                         <PrismaZoom maxZoom={18}>
         <ImageMapper src={map}
                 lineWidth={0.00001} 
-                width={ 1000} 
+                width={ 1125} 
                 imgWidth={12413} 
                 map={{ name: "my-map",
                        areas: [
                             ...A.map((v)=>{
-                                let c = (v.available)? 'rgba(4, 255, 75, 0.2)' : 'rgba(255, 0, 0, 0.2)'
+                                let c = (v.available)? 'rgba(4, 255, 75, 0.3)' : 'rgba(255, 0, 0, 0.3)'
                             return {...v,preFillColor: c}
                                          })]    }}  
     	onClick={area => this.handleClick(area)}
