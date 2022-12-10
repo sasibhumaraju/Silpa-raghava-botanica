@@ -1,6 +1,6 @@
 import React from "react";
 import map from './assets/map2.jpg'
-import ImageMapper from 'react-img-mapper';
+import ImageMapper from 'react-image-mapper';
 import plotsDataServices
  from "./services/plots-data.services";
  import PlotCard from './components/PlotCard.js'
@@ -38,7 +38,7 @@ class MyMap extends React.Component {
         return(
             <div>
             <div className="container"       > 
-            {/* <PrismaZoom > */}
+            <PrismaZoom >
                 <div className="image-container"  >
                 {/* <TransformWrapper 
             //   velocityAnimation={{disabled:true}}
@@ -50,7 +50,7 @@ class MyMap extends React.Component {
                                     wheel={{touchPadDisabled:true}}
                                     centerZoomedOut>
                       */}
-                            <MapInteractionCSS
+                            {/* <MapInteractionCSS
                            value={this.state.value}
                        
                            onChange={(value) =>{
@@ -80,7 +80,7 @@ class MyMap extends React.Component {
                            } 
                              disablePan={false}  maxScale={15} minScale={1} 
          >
-       
+        */}
             {/* <TransformComponent
                         > */}
         <ImageMapper src={map}
@@ -90,17 +90,18 @@ class MyMap extends React.Component {
                 map={{ name: "my-map",
                        areas: [
                             ...A.map((v)=>{
-                            return {...v,preFillColor: 'rgba(4, 255, 75, 0.5)'}
+                                let c = (v.available)? 'rgba(4, 255, 75, 0.2)' : 'rgba(255, 0, 0, 0.2)'
+                            return {...v,preFillColor: c}
                                          })]    }}  
     	onClick={area => this.handleClick(area)}
     />           
      {/* </TransformComponent> */}
    
-              </MapInteractionCSS>
+              {/* </MapInteractionCSS> */}
              
               {/* </TransformWrapper> */}
               </div>
-              {/* </PrismaZoom > */}
+              </PrismaZoom >
               </div>
           
              ` {this.state.active? card  : null}   `

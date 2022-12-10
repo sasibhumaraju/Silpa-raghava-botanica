@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/real-estate-plots/static/css/main.9d872c9d.css",
-    "main.js": "/real-estate-plots/static/js/main.64ba8859.js",
+    "main.css": "/real-estate-plots/static/css/main.9c5a56ed.css",
+    "main.js": "/real-estate-plots/static/js/main.ef1d3302.js",
     "static/js/787.15fde41a.chunk.js": "/real-estate-plots/static/js/787.15fde41a.chunk.js",
     "static/media/map2.jpg": "/real-estate-plots/static/media/map2.84a11b28f78f671f8866.jpg",
     "index.html": "/real-estate-plots/index.html",
-    "main.9d872c9d.css.map": "/real-estate-plots/static/css/main.9d872c9d.css.map",
-    "main.64ba8859.js.map": "/real-estate-plots/static/js/main.64ba8859.js.map",
+    "main.9c5a56ed.css.map": "/real-estate-plots/static/css/main.9c5a56ed.css.map",
+    "main.ef1d3302.js.map": "/real-estate-plots/static/js/main.ef1d3302.js.map",
     "787.15fde41a.chunk.js.map": "/real-estate-plots/static/js/787.15fde41a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9d872c9d.css",
-    "static/js/main.64ba8859.js"
+    "static/css/main.9c5a56ed.css",
+    "static/js/main.ef1d3302.js"
   ]
 }

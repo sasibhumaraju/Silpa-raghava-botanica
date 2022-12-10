@@ -1,0 +1,20 @@
+.Pointer{
+    position: fixed;
+    z-index: 999999;
+    bottom: 20px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.body{
+      font-size: 12px;
+      font-weight: 400;
+      background-color: #ffbe00;;
+      width: 150px;
+      color: #362a82;;
+      padding: 4px 10px;
+      border-radius: 6px;
+}
