@@ -44,3 +44,11 @@
     text-align: left;
     color: #ffd56d;
 }
+
+.sold{
+    color: red;
+}
+
+.available{
+    color: rgb(0, 255, 0);
+}

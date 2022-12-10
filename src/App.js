@@ -3,6 +3,7 @@ import PlotsBody from './PlotsBody';
 import PlotCard from './components/PlotCard.js'
 import './App.css';
 import Pointer from './components/Pointer';
+import Compass from './components/Compass.js';
 
 function App() {
   const s = (window.innerWidth > Window.innerHeight)? {transform : 'rotate(180deg)'} : {transform : 'rotate(0deg)'};
@@ -11,6 +12,7 @@ function App() {
     <div className="App" >
     <Pointer></Pointer>
     <PlotsBody></PlotsBody>
+    <Compass></Compass>
      
     </div>
   

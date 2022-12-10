@@ -38,7 +38,7 @@ class MyMap extends React.Component {
         return(
             <div>
             <div className="container"       > 
-            <PrismaZoom >
+            
                 <div className="image-container"  >
                 {/* <TransformWrapper 
             //   velocityAnimation={{disabled:true}}
@@ -83,9 +83,10 @@ class MyMap extends React.Component {
         */}
             {/* <TransformComponent
                         > */}
+                        <PrismaZoom maxZoom={18}>
         <ImageMapper src={map}
                 lineWidth={0.00001} 
-                width={ window.innerWidth > 1125? window.innerWidth : 1125} 
+                width={ 1125} 
                 imgWidth={12413} 
                 map={{ name: "my-map",
                        areas: [
@@ -100,8 +101,9 @@ class MyMap extends React.Component {
               {/* </MapInteractionCSS> */}
              
               {/* </TransformWrapper> */}
+              </PrismaZoom>
               </div>
-              </PrismaZoom >
+              
               </div>
           
              ` {this.state.active? card  : null}   `

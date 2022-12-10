@@ -6,15 +6,49 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
+    display: flex;
+    flex-direction: column;
+    filter: drop-shadow(0 0 0.75rem rgb(0, 0, 0));
+    animation: MoveUpDown 3s ease infinite;
 }
 
 .body{
       font-size: 12px;
-      font-weight: 400;
+      font-weight: 500;
       background-color: #ffbe00;;
-      width: 150px;
+      width: 160px;
+      height: 20px;
       color: #362a82;;
+      /* color: black; */
       padding: 4px 10px;
       border-radius: 6px;
+      letter-spacing: 0.6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 }
+.hand{
+    width: 20px;
+    color: #ffbe00;
+    margin: 5px;
+    width: 18px;
+}
+
+@keyframes MoveUpDown {
+    0%, 100% {
+      bottom: 20px;
+      opacity: 0;
+    }
+    40% {
+        bottom: 60px;
+        opacity: 1;
+      }
+    50% {
+      bottom: 60px;
+      opacity: 1;
+    }
+    60% {
+        bottom: 60px;
+        opacity: 1;
+      }
+  }

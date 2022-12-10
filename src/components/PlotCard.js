@@ -14,6 +14,7 @@ class PlotCard extends React.Component {
     }
 
     render(){
+        const status = this.props.Available? <div className="available">Available</div> : <div className="sold">Sold</div>
         return(
             <div className="PlotCard">
                 <div className="PlotBody">
@@ -35,7 +36,7 @@ class PlotCard extends React.Component {
                         </div>
                     <div className="plotElement"> 
                         <div className="PlotElementHeading">Status      </div>
-                        <div className="PlotElementBody">`{this.props.Available? "Available" : "Sold"}`</div>
+                        <div className="PlotElementBody">{status}</div>
                         </div>
                   </div>
             </div>
