@@ -48,8 +48,8 @@
 .image-container{
    
     
-    height: 636px;
-    width: 1125px;
+    height: 565.33px;
+    width: 1000px;
     /* scale: 1; */
    margin-left: auto;
    margin-right: auto;
@@ -94,8 +94,8 @@
   /* color:rgba(255, 0, 0, 0.2); */
 display: inline-block;
 overflow: hidden;
-margin-top: 80px;
-margin-bottom: 80px;
+margin-top: 50px;
+margin-bottom: 50px;
 border: 20px;
 border: 5px solid black;
 
