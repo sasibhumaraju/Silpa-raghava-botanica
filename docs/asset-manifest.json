@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/real-estate-plots/static/css/main.92bd70a6.css",
+    "main.js": "/real-estate-plots/static/js/main.ff3c4d9b.js",
+    "static/js/787.15fde41a.chunk.js": "/real-estate-plots/static/js/787.15fde41a.chunk.js",
+    "static/media/map2.jpg": "/real-estate-plots/static/media/map2.84a11b28f78f671f8866.jpg",
+    "static/media/hand.svg": "/real-estate-plots/static/media/hand.64f8200e24c8b1d764cc96ea47adcfad.svg",
+    "index.html": "/real-estate-plots/index.html",
+    "main.92bd70a6.css.map": "/real-estate-plots/static/css/main.92bd70a6.css.map",
+    "main.ff3c4d9b.js.map": "/real-estate-plots/static/js/main.ff3c4d9b.js.map",
+    "787.15fde41a.chunk.js.map": "/real-estate-plots/static/js/787.15fde41a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.92bd70a6.css",
+    "static/js/main.ff3c4d9b.js"
+  ]
+}
