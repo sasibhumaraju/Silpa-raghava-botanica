@@ -109,7 +109,7 @@ class MyMap extends React.Component {
               
               </div>
           
-             ` {this.state.active? card  : null}   `
+              {this.state.active? card  : null}   
             </div>
         );
     }
