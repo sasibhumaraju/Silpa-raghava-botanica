@@ -34,10 +34,11 @@ class PlotCard extends React.Component {
                         <div className="PlotElementHeading">Size      </div>
                         <div className="PlotElementBody">{this.props.Size}</div>
                         </div>
-                    <div className="plotElement"> 
-                        <div className="PlotElementHeading">Status      </div>
-                        <div className="PlotElementBody">{status}</div>
-                        </div>
+                  
+                  </div>
+                  <div className="plotStausElement"> 
+                        <div className="PlotStatusElementHeading">Status      </div>
+                        <div className="PlotStatusElementBody">{status}</div>
                   </div>
             </div>
         );

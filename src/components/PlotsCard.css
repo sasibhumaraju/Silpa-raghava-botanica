@@ -20,7 +20,7 @@
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     transition: 1s;
     animation-duration: 1s;
-  animation-name: slidein;
+    animation-name: slidein;
 
 }
 
@@ -61,6 +61,28 @@
     color: #ffd56d;
 }
 
+.plotStausElement{
+    margin: 20px;
+    margin-bottom: 18px;
+   
+   
+}
+.PlotStatusElementHeading{
+    font-size: 16px;
+    letter-spacing: 0.8px;
+    /* text-transform: uppercase; */
+    text-align: left;
+   
+}
+
+.PlotStatusElementBody{
+    font-size: 1rem;
+    letter-spacing: 0.8px;
+    /* text-transform: uppercase; */
+    text-align: left;
+    color: #ffd56d;
+}
+
 .sold{
     color: red;
 }
@@ -68,3 +90,26 @@
 .available{
     color: rgb(0, 255, 0);
 }
+
+
+@media screen and (max-width: 1125px) {
+    .PlotCard{
+        height: 250px;
+        display: flex;
+        flex-direction: row;
+        overflow: scroll;
+        overflow-x: hidden;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    .image-container{
+
+      width: calc(100vw - 50px);
+  
+  }
+  .container {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  }

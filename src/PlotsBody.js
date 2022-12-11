@@ -37,7 +37,7 @@ class MyMap extends React.Component {
         const card = <PlotCard PlotNum={this.state.currentData.name} Available={this.state.currentData.available} Dimension={this.state.currentData.dimension} Size={this.state.currentData.size} Facing={this.state.currentData.facing}></PlotCard>;
         return(
             <div>
-            <div className="container"       > 
+            <div className="container"    > 
             
                 <div className="image-container"  >
                 {/* <TransformWrapper 
@@ -83,10 +83,12 @@ class MyMap extends React.Component {
         */}
             {/* <TransformComponent
                         > */}
-                        <PrismaZoom maxZoom={18}>
+                        <div className="inner-image-container">
+                        <PrismaZoom maxZoom={18} >
+
         <ImageMapper src={map}
                 lineWidth={0.00001} 
-                width={ 1125} 
+                width={  1125} 
                 imgWidth={12413} 
                 map={{ name: "my-map",
                        areas: [
@@ -102,6 +104,7 @@ class MyMap extends React.Component {
              
               {/* </TransformWrapper> */}
               </PrismaZoom>
+              </div>
               </div>
               
               </div>
