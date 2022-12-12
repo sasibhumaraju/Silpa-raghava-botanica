@@ -817,7 +817,7 @@ const A = [
 },
 {
   'available':true,
-      'coords':[6156,6194,3918,6195,3969,6152,3968],
+      'coords':[6156,3917,6195,3918,6195,3969,6152,3968,],
       'name':'471',
       'shape':'poly',
       'facing':'South',
@@ -1050,27 +1050,2115 @@ const A = [
 
 
 
-//.....
+//..... 100 over @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 {
-       'available':true,
-      'coords':[6113,3769,6155,3779,6148,3829,6098,3818],
-      'name':'482',
+      'available':false,
+      'coords':[5889,2658,5962,2635,5973,2677,5901,2699],
+      'name':'569',
       'shape':'poly',
       'facing':'west',
-      'dimension':'70*36',
-      'size':'280 Sq.yds'
-   
+      'dimension':'90 X 50',
+      'size':'500 Sq.yds'
+      
+  },
+
+{
+     'available':false,
+     'coords':[5901,2699,5973,2677,5986,2718,5913,2739],
+     'name':'570',
+     'shape':'poly',
+     'facing':'west',
+     'dimension':'90 X 50 ',
+     'size':'500 Sq.yds'
+ 
 },
 {
-       'available':true,
-      'coords':[5466,2648,5519,2633,5537,2698,5485,2714],
-      'name':'532',
-      'shape':'poly',
-      'facing':'west',
-      'dimension':'70*36',
-      'size':'280 Sq.yds'
-   
+     'available':true,
+     'coords':[6049,2477,6111,2459,6148,2582,6086,2600],
+     'name':'580',
+     'shape':'poly',
+     'facing':'south',
+     'dimension':'75 X 150',
+     'size':'1250 Sq.yds'
+
 },
+{
+    'available':true,
+     'coords':[6111,2459,6169,2441,6205,2565,6148,2582],
+     'name':'581',
+     'shape':'poly',
+     'facing':'south',
+     'dimension':'70 X 150',
+     'size':'1166.67 Sq.yds'
+  
+},
+{
+      'available':false,
+     'coords':[6180,2483,6254,2461,6266,2502,6193,2524],
+     'name':'583',
+     'shape':'poly',
+     'facing':'west',
+     'dimension':'90 X 50',
+     'size':'500 Sq.yds'
+  
+},
+{
+    'available':false,
+     'coords':[6193,2524,6266,2502,6278,2543,6205,2565],
+     'name':'584',
+     'shape':'poly',
+     'facing':'west',
+     'dimension':'90 X 50',
+     'size':'500 Sq.yds'
+  
+},
+{
+      'available':false,
+     'coords':[6205,2565,6278,2543,6290,2584,6217,2606],
+     'name':'585',
+     'shape':'poly',
+     'facing':'west',
+     'dimension':'90 X 50',
+     'size':'500 Sq.yds'
+  
+},
+{
+ 'available':false,
+     'coords':[6217,2606,6290,2584,6302,2625,6229,2646],
+     'name':'586',
+     'shape':'poly',
+     'facing':'west',
+     'dimension':'90 X 50',
+     'size':'500 Sq.yds'
+  
+},
+
+{
+ 'available':true,
+     'coords':[6132,2756,6193,2738,6229,2861,6168,2879],
+     'name':'594',
+     'shape':'poly',
+     'facing':'south',
+     'dimension':'70 X 150',
+     'size':'1250 Sq.yds'
+  
+},
+{
+ 'available':true,
+     'coords':[6193,2738,6250,2721,6287,2844,6229,2861],
+     'name':'595',
+     'shape':'poly',
+     'facing':'south',
+     'dimension':'70 X 150',
+     'size':'1166.67 Sq.yds'
+  
+},
+{
+ 'available':false,
+     'coords':[6263,2762,6336,2740,6348,2781,6275,2803],
+     'name':'597',
+     'shape':'poly',
+     'facing':'west',
+     'dimension':'90 X 50',
+     'size':'500 Sq.yds'
+  
+},
+{
+ 'available':false,
+     'coords':[6275,2803,6348,2781,6360,2822,6287,2844],
+     'name':'598',
+     'shape':'poly',
+     'facing':'west',
+     'dimension':'90 X 50',
+     'size':'500 Sq.yds'
+  
+},
+{
+ 'available':false,
+     'coords':[6287,2844,6360,2822,6372,2863,6299,2884],
+     'name':'599',
+     'shape':'poly',
+     'facing':'west',
+     'dimension':'90 X 50',
+     'size':'500 Sq.yds'
+  
+},
+{
+ 'available':false,
+     'coords':[6299,2884,6372,2863,6385,2904,6311,2926],
+     'name':'600',
+     'shape':'poly',
+     'facing':'west',
+     'dimension':'90 X 50',
+     'size':'500 Sq.yds'
+  
+},
+{
+      'available':true,
+     'coords':[6784,2858,6888,2828,6909,2901,6806,2931],
+     'name':'628',
+     'shape':'poly',
+     'facing':'west',
+     'dimension':'127.6 X 90',
+     'size':'1275 Sq.yds'
+  
+},
+{
+      'available':true,
+     'coords':[6834,2924,6909,2901,6938,2996,6862,3018],
+     'name':'629',
+     'shape':'poly',
+     'facing':'west',
+     'dimension':'90 X 115',
+     'size':'1188.33 Sq.yds'
+  
+},
+{
+      'available':true,
+     'coords':[7493,3273,7566,3252,7579,3293,7505,3314],
+     'name':'663',
+     'shape':'poly',
+     'facing':'west',
+     'dimension':'90 X 50',
+     'size':'500 Sq.yds'
+  
+},
+
+// from this.......................
+
+
+{
+ 'available':true,
+ 'coords':[5975,2285,6016,2272,6038,2346,5997,2358],
+ 'name':'714',
+'shape':'poly',
+ 'facing':'south',
+ 'dimension':'90 X 50',
+ 'size':'500 Sq.yds'
+ 
+},
+
+{
+'available':true,
+'coords':[6016,2272,6057,2260,6079,2334,6038,2346],
+'name':'715',
+'shape':'poly',
+'facing':'south',
+'dimension':'90 X 50',
+'size':'500 Sq.yds'
+
+},
+{
+'available':true,
+'coords':[6057,2260,6098,2248,6120,2322,6079,2334],
+'name':'716',
+'shape':'poly',
+'facing':'south',
+'dimension':'90 X 50',
+'size':'500 Sq.yds'
+
+},
+{
+'available':true,
+'coords':[6098,2248,6139,2237,6161,2310,6120,2322],
+'name':'717',
+'shape':'poly',
+'facing':'south',
+'dimension':'90 X 50',
+'size':'500 Sq.yds'
+
+},
+{
+ 'available':true,
+'coords':[6139,2237,6180,2224,6202,2298,6161,2310],
+'name':'718',
+'shape':'poly',
+'facing':'south',
+'dimension':'90 X 50',
+'size':'500 Sq.yds'
+
+},
+{
+'available':true,
+'coords':[6180,2224,6221,2212,6243,2285,6202,2298],
+'name':'719',
+'shape':'poly',
+'facing':'south',
+'dimension':'90 X 50',
+'size':'500 Sq.yds'
+
+},
+{
+ 'available':true,
+'coords':[6221,2212,6262,2200,6284,2274,6243,2286],
+'name':'720',
+'shape':'poly',
+'facing':'south',
+'dimension':'90 X 50',
+'size':'500 Sq.yds'
+
+},
+{
+'available':true,
+'coords':[6262,2200,6304,2188,6325,2261,6284,2274],
+'name':'721',
+'shape':'poly',
+'facing':'south',
+'dimension':'90 X 50',
+'size':'500 Sq.yds'
+
+},
+
+{
+'available':true,
+'coords':[6304,2188,6345,2177,6366,2249,6325,2261],
+'name':'722',
+'shape':'poly',
+'facing':'south',
+'dimension':'90 X 50',
+'size':'500 Sq.yds'
+
+},
+{
+'available':true,
+'coords':[6345,2177,6385,2164,6407,2237,6366,2249],
+'name':'723',
+'shape':'poly',
+'facing':'south',
+'dimension':'90 X 50',
+'size':'500 Sq.yds'
+
+},
+{
+'available':true,
+'coords':[5922,2104,5963,2092,5984,2166,5942,2178],
+'name':'739',
+'shape':'poly',
+'facing':'south',
+'dimension':'90 X 50',
+'size':'500 Sq.yds'
+
+},
+{
+'available':true,
+'coords':[5963,2092,6004,2080,6025,2154,5984,2166],
+'name':'740',
+'shape':'poly',
+'facing':'south',
+'dimension':'90 X 50',
+'size':'500 Sq.yds'
+
+},
+{
+'available':true,
+'coords':[6004,2080,6045,2068,6067,2141,6025,2154],
+'name':'741',
+'shape':'poly',
+'facing':'south',
+'dimension':'90 X 50',
+'size':'500 Sq.yds'
+
+},
+{
+'available':true,
+'coords':[6045,2068,6086,2056,6108,2130,6067,2142],
+'name':'742',
+'shape':'poly',
+'facing':'south',
+'dimension':'90 X 50',
+'size':'500 Sq.yds'
+
+},
+{
+ 'available':true,
+'coords':[6086,2056,6127,2044,6149,2117,6108,2130],
+'name':'743',
+'shape':'poly',
+'facing':'south',
+'dimension':'90 X 50',
+'size':'500 Sq.yds'
+
+},
+{
+ 'available':true,
+'coords':[6127,2044,6168,2032,6190,2106,6149,2117],
+'name':'744',
+'shape':'poly',
+'facing':'south',
+'dimension':'90 X 50',
+'size':'500 Sq.yds'
+
+},
+{
+ 'available':true,
+'coords':[6168,2032,6209,2020,6231,2093,6190,2105],
+'name':'745',
+'shape':'poly',
+'facing':'south',
+'dimension':'90 X 50',
+'size':'500 Sq.yds'
+
+},
+
+
+//...........
+
+
+
+{
+ 'available':true,
+ 'coords':[6209,2020,6250,2008,6271,2081,6231,2093],
+ 'name':'746',
+'shape':'poly',
+ 'facing':'south',
+ 'dimension':'90 X 50',
+ 'size':'500 Sq.yds'
+ 
+},
+
+{
+'available':true,
+'coords':[5868,1923,5910,1911,5931,1985,5890,1997],
+'name':'768',
+'shape':'poly',
+'facing':'south',
+'dimension':'90 X 50',
+'size':'500 Sq.yds'
+
+},
+{
+'available':true,
+'coords':[5910,1911,5951,1899,5972,1973,5931,1985],
+'name':'769',
+'shape':'poly',
+'facing':'south',
+'dimension':'90 X 50',
+'size':'500 Sq.yds'
+
+},
+{
+'available':true,
+'coords':[5951,1899,5992,1887,6013,1961,5972,1973],
+'name':'770',
+'shape':'poly',
+'facing':'south',
+'dimension':'90 X 50',
+'size':'500 Sq.yds'
+
+},
+{
+ 'available':true,
+'coords':[5992,1887,6033,1875,6055,1949,6013,1961],
+'name':'771',
+'shape':'poly',
+'facing':'south',
+'dimension':'90 X 50',
+'size':'500 Sq.yds'
+
+},
+{
+'available':true,
+'coords':[6033,1875,6074,1863,6096,1937,6055,1949],
+'name':'772',
+'shape':'poly',
+'facing':'south',
+'dimension':'90 X 50',
+'size':'500 Sq.yds'
+
+},
+{
+ 'available':true,
+'coords':[6074,1863,6115,1851,6136,1924,6096,1937],
+'name':'773',
+'shape':'poly',
+'facing':'south',
+'dimension':'90 X 50',
+'size':'500 Sq.yds'
+
+},
+{
+'available':true,
+'coords':[6115,1851,6156,1839,6177,1912,6137,1924],
+'name':'774',
+'shape':'poly',
+'facing':'south',
+'dimension':'90 X 50',
+'size':'500 Sq.yds'
+
+},
+
+{
+'available':true,
+'coords':[6156,1839,6197,1827,6219,1900,6177,1912],
+'name':'775',
+'shape':'poly',
+'facing':'south',
+'dimension':'90 X 50',
+'size':'500 Sq.yds'
+
+},
+{
+'available':true,
+'coords':[6197,1827,6238,1815,6260,1888,6219,1900],
+'name':'776',
+'shape':'poly',
+'facing':'south',
+'dimension':'90 X 50',
+'size':'500 Sq.yds'
+
+},
+{
+'available':true,
+'coords':[6394,1769,6436,1758,6457,1830,6416,1843],
+'name':'780',
+'shape':'poly',
+'facing':'south',
+'dimension':'90 X 50',
+'size':'500 Sq.yds'
+
+},
+{
+'available':true,
+'coords':[6436,1758,6476,1745,6498,1818,6457,1830],
+'name':'781',
+'shape':'poly',
+'facing':'south',
+'dimension':'90 X 50',
+'size':'500 Sq.yds'
+
+},
+{
+'available':true,
+'coords':[6104,1328,6178,1306,6189,1347,6116,1369],
+'name':'795',
+'shape':'poly',
+'facing':'west',
+'dimension':'90 X 50',
+'size':'500 Sq.yds'
+
+},
+{
+'available':true,
+'coords':[6116,1369,6189,1347,6201,1388,6127,1410],
+'name':'796',
+'shape':'poly',
+'facing':'west',
+'dimension':'90 X 50',
+'size':'500 Sq.yds'
+
+},
+{
+ 'available':true,
+'coords':[6127,1410,6201,1388,6213,1429,6140,1451],
+'name':'797',
+'shape':'poly',
+'facing':'west',
+'dimension':'90 X 50',
+'size':'500 Sq.yds'
+
+},
+{
+ 'available':true,
+'coords':[6165,1533,6237,1511,6249,1552,6176,1574],
+'name':'800',
+'shape':'poly',
+'facing':'west',
+'dimension':'90 X 50',
+'size':'500 Sq.yds'
+
+},
+{
+ 'available':true,
+'coords':[6176,1575,6249,1552,6262,1593,6188,1615],
+'name':'801',
+'shape':'poly',
+'facing':'west',
+'dimension':'90 X 50',
+'size':'500 Sq.yds'
+
+},
+
+
+//.............
+
+
+
+
+{
+ 'available':true,
+ 'coords':[6188,1615,6262,1593,6274,1634,6200,1656],
+ 'name':'802',
+'shape':'poly',
+ 'facing':'west',
+ 'dimension':'90 X 50',
+ 'size':'500 Sq.yds'
+ 
+},
+
+{
+'available':true,
+'coords':[6200,1656,6274,1634,6285,1675,6213,1697],
+'name':'803',
+'shape':'poly',
+'facing':'west',
+'dimension':'90 X 50',
+'size':'500 Sq.yds'
+
+},
+{
+'available':true,
+'coords':[6213,1697,6285,1675,6297,1717,6225,1738],
+'name':'804',
+'shape':'poly',
+'facing':'west',
+'dimension':'90 X 50',
+'size':'5006 Sq.yds'
+
+},
+{
+'available':true,
+'coords':[5923,1381,5996,1359,6008,1400,5935,1422],
+'name':'819',
+'shape':'poly',
+'facing':'west',
+'dimension':'90 X 50',
+'size':'500 Sq.yds'
+
+},
+{
+ 'available':true,
+'coords':[5935,1422,6008,1400,6020,1441,5947,1463],
+'name':'820',
+'shape':'poly',
+'facing':'west',
+'dimension':'90 X 50',
+'size':'500 Sq.yds'
+
+},
+{
+'available':true,
+'coords':[5947,1463,6020,1441,6032,1482,5959,1504],
+'name':'821',
+'shape':'poly',
+'facing':'west',
+'dimension':'90 X 50',
+'size':'500 Sq.yds'
+
+},
+{
+ 'available':true,
+'coords':[5959,1504,6032,1482,6045,1524,5972,1545],
+'name':'822',
+'shape':'poly',
+'facing':'west',
+'dimension':'90 X 50',
+'size':'500 Sq.yds'
+
+},
+{
+'available':true,
+'coords':[5972,1545,6045,1524,6057,1564,5984,1586],
+'name':'823',
+'shape':'poly',
+'facing':'west',
+'dimension':'90 X 50',
+'size':'500 Sq.yds'
+
+},
+
+{
+'available':true,
+'coords':[5984,1586,6057,1564,6069,1605,5996,1627],
+'name':'824',
+'shape':'poly',
+'facing':'west',
+'dimension':'90 X 50',
+'size':'500 Sq.yds'
+
+},
+{
+'available':true,
+'coords':[5996,1627,6069,1605,6081,1646,6008,1668],
+'name':'825',
+'shape':'poly',
+'facing':'west',
+'dimension':'90 X 50',
+'size':'500 Sq.yds'
+
+},
+{
+'available':true,
+'coords':[6008,1668,6081,1646,6093,1687,6020,1709],
+'name':'826',
+'shape':'poly',
+'facing':'west',
+'dimension':'90 X 50',
+'size':'500 Sq.yds'
+
+},
+{
+'available':true,
+'coords':[6020,1709,6093,1687,6105,1729,6032,1750],
+'name':'827',
+'shape':'poly',
+'facing':'west',
+'dimension':'90 X 50',
+'size':'500 Sq.yds'
+
+},
+{
+'available':true,
+'coords':[5803,1639,5876,1618,5888,1659,5815,1680],
+'name':'848',
+'shape':'poly',
+'facing':'west',
+'dimension':'90 X 50',
+'size':'500 Sq.yds'
+
+},
+{
+'available':false,
+'coords':[5815,1680,5888,1659,5900,1700,5827,1721],
+'name':'849',
+'shape':'poly',
+'facing':'west',
+'dimension':'90 X 50',
+'size':'500 Sq.yds'
+
+},
+{
+ 'available':false,
+'coords':[5827,1721,5900,1700,5912,1740,5839,1763],
+'name':'850',
+'shape':'poly',
+'facing':'west',
+'dimension':'90 X 50',
+'size':'500 Sq.yds'
+
+},
+{
+ 'available':false,
+'coords':[5839,1763,5912,1740,5924,1782,5851,1803],
+'name':'851',
+'shape':'poly',
+'facing':'west',
+'dimension':'90 X 50',
+'size':'500 Sq.yds'
+
+},
+{
+ 'available':true,
+'coords':[5787,921,5861,900,5873,941,5800,962],
+'name':'880',
+'shape':'poly',
+'facing':'west',
+'dimension':'90 X 50',
+'size':'500 Sq.yds'
+
+},
+
+//...............
+
+
+
+
+
+
+{
+ 'available':true,
+ 'coords':[5872,1208,5945,1187,5958,1228,5884,1249],
+ 'name':'887',
+'shape':'poly',
+ 'facing':'west',
+ 'dimension':'90 X 50',
+ 'size':'500 Sq.yds'
+ 
+},
+
+{
+'available':true,
+'coords':[5607,974,5681,953,5692,994,5619,1015],
+'name':'900',
+'shape':'poly',
+'facing':'west',
+'dimension':'90 X 50',
+'size':'500 Sq.yds'
+
+},
+{
+'available':true,
+'coords':[5619,1015,5692,994,5704,1035,5631,1056],
+'name':'901',
+'shape':'poly',
+'facing':'west',
+'dimension':'90 X 50',
+'size':'500 Sq.yds'
+
+},
+{
+'available':true,
+'coords':[5631,1056,5704,1035,5717,1076,5643,1098],
+'name':'902',
+'shape':'poly',
+'facing':'west',
+'dimension':'90 X 50',
+'size':'500 Sq.yds'
+
+},
+{
+ 'available':true,
+'coords':[5643,1098,5717,1076,5729,1117,5655,1139],
+'name':'903',
+'shape':'poly',
+'facing':'west',
+'dimension':'90 X 50',
+'size':'500 Sq.yds'
+
+},
+{
+'available':true,
+'coords':[5512,649,5585,628,5593,657,5520,679],
+'name':'923',
+'shape':'poly',
+'facing':'west',
+'dimension':'90 X 36',
+'size':'360 Sq.yds'
+
+},
+{
+ 'available':true,
+'coords':[5591,739,5629,727,5650,801,5613,812],
+'name':'942',
+'shape':'poly',
+'facing':'south',
+'dimension':'90 X 46',
+'size':'460 Sq.yds'
+
+},
+{
+'available':true,
+'coords':[5550,751,5591,739,5613,812,5572,824],
+'name':'943',
+'shape':'poly',
+'facing':'south',
+'dimension':'90 X 50',
+'size':'500 Sq.yds'
+
+},
+
+{
+'available':true,
+'coords':[5509,763,5550,751,5572,824,5531,837],
+'name':'944',
+'shape':'poly',
+'facing':'south',
+'dimension':'90 X 50',
+'size':'500 Sq.yds'
+
+},
+{
+'available':false,
+'coords':[5330,700,5387,682,5398,719,5341,736],
+'name':'947',
+'shape':'poly',
+'facing':'west',
+'dimension':'70 X 45',
+'size':'350 Sq.yds'
+
+},
+{
+'available':true,
+'coords':[4635,1065,4708,1043,4720,1080,4646,1105],
+'name':'1011',
+'shape':'poly',
+'facing':'west',
+'dimension':'90 X 50',
+'size':'500 Sq.yds'
+
+},
+{
+'available':true,
+'coords':[4646,1105,4720,1084,4732,1125,4659,1147],
+'name':'1012',
+'shape':'poly',
+'facing':'west',
+'dimension':'90 X 50',
+'size':'500 Sq.yds'
+
+},
+{
+'available':true,
+'coords':[4659,1147,4732,1125,4744,1166,4671,1188],
+'name':'1013',
+'shape':'poly',
+'facing':'west',
+'dimension':'90 X 50',
+'size':'500 Sq.yds'
+
+},
+{
+'available':true,
+'coords':[4671,1188,4744,1166,4756,1207,4683,1229],
+'name':'1014',
+'shape':'poly',
+'facing':'west',
+'dimension':'90 X 50',
+'size':'500 Sq.yds'
+
+},
+{
+ 'available':true,
+'coords':[4683,1229,4756,1207,4768,1248,4695,1270],
+'name':'1015',
+'shape':'poly',
+'facing':'west',
+'dimension':'90 X 50',
+'size':'500 Sq.yds'
+
+},
+{
+ 'available':true,
+'coords':[4695,1270,4768,1248,4781,1289,4707,1310],
+'name':'1016',
+'shape':'poly',
+'facing':'west',
+'dimension':'90 X 50',
+'size':'500 Sq.yds'
+
+},
+{
+ 'available':true,
+'coords':[4380,926,4453,903,4466,945,4392,967],
+'name':'1034',
+'shape':'poly',
+'facing':'west',
+'dimension':'90 X 50',
+'size':'500 Sq.yds'
+
+},
+
+
+
+//.................
+
+
+
+
+
+
+{
+ 'available':true,
+ 'coords':[4392,967,4466,954,4478,986,4404,1008],
+ 'name':'1035',
+'shape':'poly',
+ 'facing':'west',
+ 'dimension':'90 X 50',
+ 'size':'500 Sq.yds'
+ 
+},
+
+{
+'available':true,
+'coords':[4253,1132,4294,1120,4316,1194,4275,1206],
+'name':'1049',
+'shape':'poly',
+'facing':'south',
+'dimension':'',
+'size':'500 Sq.yds'
+
+},
+{
+'available':true,
+'coords':[4418,1085,4458,1072,4480,1146,4439,1158],
+'name':'1053',
+'shape':'poly',
+'facing':'south',
+'dimension':'90 X 50',
+'size':'500 Sq.yds'
+
+},
+{
+'available':true,
+'coords':[4445,1815,4519,1794,4531,1835,4458,1857],
+'name':'1103',
+'shape':'poly',
+'facing':'west',
+'dimension':'90 X 50',
+'size':'500 Sq.yds'
+
+},
+{
+ 'available':true,
+'coords':[4458,1857,4531,1835,4543,1876,4470,1898],
+'name':'1104',
+'shape':'poly',
+'facing':'west',
+'dimension':'90 X 50',
+'size':'500 Sq.yds'
+
+},
+{
+'available':true,
+'coords':[4470,1898,4543,1876,4555,1918,4482,1939],
+'name':'1105',
+'shape':'poly',
+'facing':'west',
+'dimension':'90 X 50',
+'size':'500 Sq.yds'
+
+},
+{
+ 'available':true,
+'coords':[4482,1939,4555,1918,4567,1958,4494,1980],
+'name':'1106',
+'shape':'poly',
+'facing':'west',
+'dimension':'90 X 50',
+'size':'500 Sq.yds'
+
+},
+{
+'available':true,
+'coords':[4494,1980,4567,1958,4579,2000,4506,2021],
+'name':'1107',
+'shape':'poly',
+'facing':'west',
+'dimension':'90 X 50',
+'size':'500 Sq.yds'
+
+},
+
+{
+'available':true,
+'coords':[4506,2021,4579,2000,4592,2040,4518,2062],
+'name':'1108',
+'shape':'poly',
+'facing':'west',
+'dimension':'90 X 50',
+'size':'500 Sq.yds'
+
+},
+{
+'available':true,
+'coords':[5000,1608,5041,1597,5063,1669,5021,1682],
+'name':'1147',
+'shape':'poly',
+'facing':'south',
+'dimension':'90 X 50',
+'size':'500 Sq.yds'
+
+},
+{
+'available':false,
+'coords':[5530,1318,5571,1306,5579,1331,5537,1342],
+'name':'1175',
+'shape':'poly',
+'facing':'west',
+'dimension':'50 X 30',
+'size':'166.67 Sq.yds'
+
+},
+{
+'available':true,
+'coords':[5537,1342,5579,1331,5587,1355,5544,1367],
+'name':'1176',
+'shape':'poly',
+'facing':'west',
+'dimension':'50 X 30',
+'size':'166.67 Sq.yds'
+
+},
+{
+'available':true,
+'coords':[5517,1456,5553,1446,5575,1518,5538,1530],
+'name':'1179',
+'shape':'poly',
+'facing':'south',
+'dimension':'90 X 45',
+'size':'450 Sq.yds'
+
+},
+{
+'available':true,
+'coords':[5481,1467,5517,1456,5538,1530,5502,1541],
+'name':'1180',
+'shape':'poly',
+'facing':'south',
+'dimension':'90 X 44.3',
+'size':'442.50 Sq.yds'
+
+},
+{
+ 'available':true,
+'coords':[5402,1490,5443,1478,5465,1551,5424,1564],
+'name':'1182',
+'shape':'poly',
+'facing':'south',
+'dimension':'90 X 50',
+'size':'500 Sq.yds'
+
+},
+
+
+//................200 OVER @@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+// {
+//       'available':false,
+//       'coords':[5361,1503,5402,1490,5424,1564,5383,1576],
+//       'name':'1183',
+//       'shape':'poly',
+//       'facing':'west',
+//       'dimension':'90 X 50',
+//       'size':'500 Sq.yds'
+      
+//   },
+
+// {
+//      'available':false,
+//      'coords':[5320,1515,5361,1503,5383,1576,5342,1588],
+//      'name':'1184',
+//      'shape':'poly',
+//      'facing':'west',
+//      'dimension':'90 X 50 ',
+//      'size':'500 Sq.yds'
+ 
+// },
+// {
+//      'available':true,
+//      'coords':[5671,1919,5744,1897,5758,1938,5683,1960],
+//      'name':'1201',
+//      'shape':'poly',
+//      'facing':'south',
+//      'dimension':'75 X 150',
+//      'size':'1250 Sq.yds'
+
+// },
+// {
+//     'available':true,
+//      'coords':[5683,1960,5758,1938,5769,1979,5696,2001],
+//      'name':'1202',
+//      'shape':'poly',
+//      'facing':'south',
+//      'dimension':'70 X 150',
+//      'size':'1166.67 Sq.yds'
+  
+// },
+// {
+//       'available':false,
+//      'coords':[5696,2001,5769,1979,5781,2020,5708,2042],
+//      'name':'1203',
+//      'shape':'poly',
+//      'facing':'west',
+//      'dimension':'90 X 50',
+//      'size':'500 Sq.yds'
+  
+// },
+// {
+//     'available':false,
+//      'coords':[5708,2042,5781,2020,5793,2061,5720,2083],
+//      'name':'1204',
+//      'shape':'poly',
+//      'facing':'west',
+//      'dimension':'90 X 50',
+//      'size':'500 Sq.yds'
+  
+// },
+// {
+//       'available':false,
+//      'coords':[5502,2013,5576,1991,5588,2032,5515,2054],
+//      'name':'1226',
+//      'shape':'poly',
+//      'facing':'west',
+//      'dimension':'90 X 50',
+//      'size':'500 Sq.yds'
+  
+// },
+// {
+//  'available':false,
+//      'coords':[5515,2054,5588,2032,5600,2074,5527,2095],
+//      'name':'1227',
+//      'shape':'poly',
+//      'facing':'west',
+//      'dimension':'90 X 50',
+//      'size':'500 Sq.yds'
+  
+// },
+
+// {
+//  'available':true,
+//      'coords':[5527,2095,5600,2074,5612,2115,5539,2136],
+//      'name':'1228',
+//      'shape':'poly',
+//      'facing':'south',
+//      'dimension':'70 X 150',
+//      'size':'1250 Sq.yds'
+  
+// },
+// {
+//  'available':true,
+//      'coords':[5238,1779,5311,1757,5323,1798,5250,1820],
+//      'name':'1243',
+//      'shape':'poly',
+//      'facing':'south',
+//      'dimension':'70 X 150',
+//      'size':'1166.67 Sq.yds'
+  
+// },
+// {
+//  'available':false,
+//      'coords':[5262,1861,5335,1839,5347,1880,5273,1902],
+//      'name':'1245',
+//      'shape':'poly',
+//      'facing':'west',
+//      'dimension':'90 X 50',
+//      'size':'500 Sq.yds'
+  
+// },
+// {
+//  'available':false,
+//      'coords':[5273,1902,1347,1880,5359,1921,5286,1943],
+//      'name':'1246',
+//      'shape':'poly',
+//      'facing':'west',
+//      'dimension':'90 X 50',
+//      'size':'500 Sq.yds'
+  
+// },
+// {
+//  'available':false,
+//      'coords':[5286,1943,5359,1921,5371,1962,5298,1984],
+//      'name':'1247',
+//      'shape':'poly',
+//      'facing':'west',
+//      'dimension':'90 X 50',
+//      'size':'500 Sq.yds'
+  
+// },
+// {
+//  'available':false,
+//      'coords':[5310,2025,5383,2003,5396,2044,5322,2066],
+//      'name':'1249',
+//      'shape':'poly',
+//      'facing':'west',
+//      'dimension':'90 X 50',
+//      'size':'500 Sq.yds'
+  
+// },
+// {
+//       'available':true,
+//      'coords':[5322,2066,5396,2044,5407,2085,5334,2107],
+//      'name':'1250',
+//      'shape':'poly',
+//      'facing':'west',
+//      'dimension':'127.6 X 90',
+//      'size':'1275 Sq.yds'
+  
+// },
+// {
+//       'available':true,
+//      'coords':[5334,2107,5407,2085,5419,2126,5346,2148],
+//      'name':'1251',
+//      'shape':'poly',
+//      'facing':'west',
+//      'dimension':'90 X 115',
+//      'size':'1188.33 Sq.yds'
+  
+// },
+// {
+//       'available':true,
+//      'coords':[5057,1832,5130,1810,5142,1851,5069,1873],
+//      'name':'1267',
+//      'shape':'poly',
+//      'facing':'west',
+//      'dimension':'90 X 50',
+//      'size':'500 Sq.yds'
+  
+// },
+
+// // from this.......................
+
+
+// {
+//  'available':true,
+//  'coords':[5093,1956,5166,1933,5179,1974,5105,1996],
+//  'name':'1270',
+// 'shape':'poly',
+//  'facing':'south',
+//  'dimension':'90 X 50',
+//  'size':'500 Sq.yds'
+ 
+// },
+
+// {
+// 'available':true,
+// 'coords':[5105,1996,5179,1974,5190,2016,5117,2037],
+// 'name':'1271',
+// 'shape':'poly',
+// 'facing':'south',
+// 'dimension':'90 X 50',
+// 'size':'500 Sq.yds'
+
+// },
+// {
+// 'available':true,
+// 'coords':[5117,2037,5190,2016,5203,2057,5130,2078],
+// 'name':'1272',
+// 'shape':'poly',
+// 'facing':'south',
+// 'dimension':'90 X 50',
+// 'size':'500 Sq.yds'
+
+// },
+// {
+// 'available':true,
+// 'coords':[5130,2078,5203,2057,5215,2098,5141,2119],
+// 'name':'1273',
+// 'shape':'poly',
+// 'facing':'south',
+// 'dimension':'90 X 50',
+// 'size':'500 Sq.yds'
+
+// },
+// {
+//  'available':true,
+// 'coords':[5141,2119,5215,2098,5227,2138,5154,2160],
+// 'name':'1274',
+// 'shape':'poly',
+// 'facing':'south',
+// 'dimension':'90 X 50',
+// 'size':'500 Sq.yds'
+
+// },
+// {
+// 'available':true,
+// 'coords':[5154,2160,5227,2138,5239,2180,5166,2201],
+// 'name':'1275',
+// 'shape':'poly',
+// 'facing':'south',
+// 'dimension':'90 X 50',
+// 'size':'500 Sq.yds'
+
+// },
+// {
+//  'available':true,
+// 'coords':[5166,2201,5239,2180,5251,2221,5178,2243],
+// 'name':'1276',
+// 'shape':'poly',
+// 'facing':'south',
+// 'dimension':'90 X 50',
+// 'size':'500 Sq.yds'
+
+// },
+// {
+// 'available':true,
+// 'coords':[4961,2172,5034,2151,5046,2191,4973,2214],
+// 'name':'1298',
+// 'shape':'poly',
+// 'facing':'south',
+// 'dimension':'90 X 50',
+// 'size':'500 Sq.yds'
+
+// },
+
+// {
+// 'available':true,
+// 'coords':[4973,2214,5046,2191,5058,2233,4985,2254],
+// 'name':'1299',
+// 'shape':'poly',
+// 'facing':'south',
+// 'dimension':'90 X 50',
+// 'size':'500 Sq.yds'
+
+// },
+// {
+// 'available':true,
+// 'coords':[4985,2254,5058,2233,5071,2274,4997,2295],
+// 'name':'1300',
+// 'shape':'poly',
+// 'facing':'south',
+// 'dimension':'90 X 50',
+// 'size':'500 Sq.yds'
+
+// },
+// {
+// 'available':true,
+// 'coords':[5163,2328,5204,2316,5225,2389,5184,2401],
+// 'name':'1319',
+// 'shape':'poly',
+// 'facing':'south',
+// 'dimension':'90 X 50',
+// 'size':'500 Sq.yds'
+
+// },
+// {
+// 'available':true,
+// 'coords':[5204,2316,5245,2304,5266,2377,5225,2389],
+// 'name':'1320',
+// 'shape':'poly',
+// 'facing':'south',
+// 'dimension':'90 X 50',
+// 'size':'500 Sq.yds'
+
+// },
+// {
+// 'available':true,
+// 'coords':[5245,2304,5286,2292,5307,2365,5266,2377],
+// 'name':'1321',
+// 'shape':'poly',
+// 'facing':'south',
+// 'dimension':'90 X 50',
+// 'size':'500 Sq.yds'
+
+// },
+// {
+// 'available':true,
+// 'coords':[5286,2292,5327,2279,5349,2353,5307,2365],
+// 'name':'1322',
+// 'shape':'poly',
+// 'facing':'south',
+// 'dimension':'90 X 50',
+// 'size':'500 Sq.yds'
+
+// },
+// {
+//  'available':true,
+// 'coords':[5327,2279,5368,2267,5389,2340,5348,2353],
+// 'name':'1323',
+// 'shape':'poly',
+// 'facing':'south',
+// 'dimension':'90 X 50',
+// 'size':'500 Sq.yds'
+
+// },
+// {
+//  'available':true,
+// 'coords':[5368,2267,5409,2255,5430,2329,5389,2340],
+// 'name':'1324',
+// 'shape':'poly',
+// 'facing':'south',
+// 'dimension':'90 X 50',
+// 'size':'500 Sq.yds'
+
+// },
+// {
+//  'available':true,
+// 'coords':[5409,2255,5450,2243,5471,2317,5430,2329],
+// 'name':'1325',
+// 'shape':'poly',
+// 'facing':'south',
+// 'dimension':'90 X 50',
+// 'size':'500 Sq.yds'
+
+// },
+
+
+// //...........
+
+
+
+// {
+//  'available':true,
+//  'coords':[5450,2243,5491,2231,5513,2304,5472,2316],
+//  'name':'1326',
+// 'shape':'poly',
+//  'facing':'south',
+//  'dimension':'90 X 50',
+//  'size':'500 Sq.yds'
+ 
+// },
+
+// {
+// 'available':true,
+// 'coords':[5331,2474,5380,2460,5402,2533,5352,2548],
+// 'name':'1344',
+// 'shape':'poly',
+// 'facing':'south',
+// 'dimension':'90 X 50',
+// 'size':'500 Sq.yds'
+
+// },
+// {
+// 'available':true,
+// 'coords':[5380,2460,5421,2448,5442,2521,5402,2533],
+// 'name':'1345',
+// 'shape':'poly',
+// 'facing':'south',
+// 'dimension':'90 X 50',
+// 'size':'500 Sq.yds'
+
+// },
+// {
+// 'available':true,
+// 'coords':[5421,2448,5462,2436,5484,2509,5442,2521],
+// 'name':'1346',
+// 'shape':'poly',
+// 'facing':'south',
+// 'dimension':'90 X 50',
+// 'size':'500 Sq.yds'
+
+// },
+// {
+//  'available':true,
+// 'coords':[5462,2436,5503,2423,5525,2497,5484,2509],
+// 'name':'1347',
+// 'shape':'poly',
+// 'facing':'south',
+// 'dimension':'90 X 50',
+// 'size':'500 Sq.yds'
+
+// },
+// {
+// 'available':true,
+// 'coords':[4793,2615,4866,2593,4878,2634,4805,2656],
+// 'name':'1366',
+// 'shape':'poly',
+// 'facing':'south',
+// 'dimension':'90 X 50',
+// 'size':'500 Sq.yds'
+
+// },
+// {
+//  'available':true,
+// 'coords':[4805,2656,4878,2634,4890,2675,4817,2697],
+// 'name':'1367',
+// 'shape':'poly',
+// 'facing':'south',
+// 'dimension':'90 X 50',
+// 'size':'500 Sq.yds'
+
+// },
+// {
+// 'available':true,
+// 'coords':[4624,2709,4697,2687,4610,2728,4637,2749],
+// 'name':'1399',
+// 'shape':'poly',
+// 'facing':'south',
+// 'dimension':'90 X 50',
+// 'size':'500 Sq.yds'
+
+// },
+
+// {
+// 'available':true,
+// 'coords':[4612,2668,4686,2646,4697,2687,4624,2709],
+// 'name':'1400',
+// 'shape':'poly',
+// 'facing':'south',
+// 'dimension':'90 X 50',
+// 'size':'500 Sq.yds'
+
+// },
+// {
+// 'available':true,
+// 'coords':[4600,2627,4674,2605,4686,2646,4612,2668],
+// 'name':'1401',
+// 'shape':'poly',
+// 'facing':'south',
+// 'dimension':'90 X 50',
+// 'size':'500 Sq.yds'
+
+// },
+// {
+// 'available':true,
+// 'coords':[4588,2586,4660,2564,4674,2605,4600,2627],
+// 'name':'1402',
+// 'shape':'poly',
+// 'facing':'south',
+// 'dimension':'90 X 50',
+// 'size':'500 Sq.yds'
+
+// },
+
+
+// {
+// 'available':true,
+// 'coords':[6828,5058,6890,5040,6920,5141,6859,5159],
+// 'name':'06-M',
+// 'shape':'poly',
+// 'facing':'south',
+// 'dimension':'90 X 50',
+// 'size':'500 Sq.yds'
+
+// },
+// {
+// 'available':true,
+// 'coords':[6890,5040,6955,5021,6986,5122,5920,5141],
+// 'name':'07-M',
+// 'shape':'poly',
+// 'facing':'west',
+// 'dimension':'90 X 50',
+// 'size':'500 Sq.yds'
+
+// },
+// {
+// 'available':true,
+// 'coords':[6955,5021,7021,5001,7051,5103,6986,5122],
+// 'name':'08-M',
+// 'shape':'poly',
+// 'facing':'west',
+// 'dimension':'90 X 50',
+// 'size':'500 Sq.yds'
+
+// },
+
+
+// {
+//  'available':true,
+// 'coords':[6986,5122,7051,5103,7081,5205,7016,5224],
+// 'name':'15-M',
+// 'shape':'poly',
+// 'facing':'west',
+// 'dimension':'90 X 50',
+// 'size':'500 Sq.yds'
+
+// },
+// {
+//  'available':true,
+// 'coords':[6920,5141,6986,5122,7016,5224,6950,5244],
+// 'name':'16-M',
+// 'shape':'poly',
+// 'facing':'west',
+// 'dimension':'90 X 50',
+// 'size':'500 Sq.yds'
+
+// },
+
+// //...................... @@@
+// {
+//  'available':true,
+// 'coords':[6176,1575,6249,1552,6262,1593,6188,1615],
+// 'name':'801',
+// 'shape':'poly',
+// 'facing':'west',
+// 'dimension':'90 X 50',
+// 'size':'500 Sq.yds'
+
+// },
+
+
+// //.............
+
+
+
+
+// {
+//  'available':true,
+//  'coords':[6188,1615,6262,1593,6274,1634,6200,1656],
+//  'name':'802',
+// 'shape':'poly',
+//  'facing':'west',
+//  'dimension':'90 X 50',
+//  'size':'500 Sq.yds'
+ 
+// },
+
+// {
+// 'available':true,
+// 'coords':[6200,1656,6274,1634,6285,1675,6213,1697],
+// 'name':'803',
+// 'shape':'poly',
+// 'facing':'west',
+// 'dimension':'90 X 50',
+// 'size':'500 Sq.yds'
+
+// },
+// {
+// 'available':true,
+// 'coords':[6213,1697,6285,1675,6297,1717,6225,1738],
+// 'name':'804',
+// 'shape':'poly',
+// 'facing':'west',
+// 'dimension':'90 X 50',
+// 'size':'5006 Sq.yds'
+
+// },
+// {
+// 'available':true,
+// 'coords':[5923,1381,5996,1359,6008,1400,5935,1422],
+// 'name':'819',
+// 'shape':'poly',
+// 'facing':'west',
+// 'dimension':'90 X 50',
+// 'size':'500 Sq.yds'
+
+// },
+// {
+//  'available':true,
+// 'coords':[5935,1422,6008,1400,6020,1441,5947,1463],
+// 'name':'820',
+// 'shape':'poly',
+// 'facing':'west',
+// 'dimension':'90 X 50',
+// 'size':'500 Sq.yds'
+
+// },
+// {
+// 'available':true,
+// 'coords':[5947,1463,6020,1441,6032,1482,5959,1504],
+// 'name':'821',
+// 'shape':'poly',
+// 'facing':'west',
+// 'dimension':'90 X 50',
+// 'size':'500 Sq.yds'
+
+// },
+// {
+//  'available':true,
+// 'coords':[5959,1504,6032,1482,6045,1524,5972,1545],
+// 'name':'822',
+// 'shape':'poly',
+// 'facing':'west',
+// 'dimension':'90 X 50',
+// 'size':'500 Sq.yds'
+
+// },
+// {
+// 'available':true,
+// 'coords':[5972,1545,6045,1524,6057,1564,5984,1586],
+// 'name':'823',
+// 'shape':'poly',
+// 'facing':'west',
+// 'dimension':'90 X 50',
+// 'size':'500 Sq.yds'
+
+// },
+
+// {
+// 'available':true,
+// 'coords':[5984,1586,6057,1564,6069,1605,5996,1627],
+// 'name':'824',
+// 'shape':'poly',
+// 'facing':'west',
+// 'dimension':'90 X 50',
+// 'size':'500 Sq.yds'
+
+// },
+// {
+// 'available':true,
+// 'coords':[5996,1627,6069,1605,6081,1646,6008,1668],
+// 'name':'825',
+// 'shape':'poly',
+// 'facing':'west',
+// 'dimension':'90 X 50',
+// 'size':'500 Sq.yds'
+
+// },
+// {
+// 'available':true,
+// 'coords':[6008,1668,6081,1646,6093,1687,6020,1709],
+// 'name':'826',
+// 'shape':'poly',
+// 'facing':'west',
+// 'dimension':'90 X 50',
+// 'size':'500 Sq.yds'
+
+// },
+// {
+// 'available':true,
+// 'coords':[6020,1709,6093,1687,6105,1729,6032,1750],
+// 'name':'827',
+// 'shape':'poly',
+// 'facing':'west',
+// 'dimension':'90 X 50',
+// 'size':'500 Sq.yds'
+
+// },
+// {
+// 'available':true,
+// 'coords':[5803,1639,5876,1618,5888,1659,5815,1680],
+// 'name':'848',
+// 'shape':'poly',
+// 'facing':'west',
+// 'dimension':'90 X 50',
+// 'size':'500 Sq.yds'
+
+// },
+// {
+// 'available':false,
+// 'coords':[5815,1680,5888,1659,5900,1700,5827,1721],
+// 'name':'849',
+// 'shape':'poly',
+// 'facing':'west',
+// 'dimension':'90 X 50',
+// 'size':'500 Sq.yds'
+
+// },
+// {
+//  'available':false,
+// 'coords':[5827,1721,5900,1700,5912,1740,5839,1763],
+// 'name':'850',
+// 'shape':'poly',
+// 'facing':'west',
+// 'dimension':'90 X 50',
+// 'size':'500 Sq.yds'
+
+// },
+// {
+//  'available':false,
+// 'coords':[5839,1763,5912,1740,5924,1782,5851,1803],
+// 'name':'851',
+// 'shape':'poly',
+// 'facing':'west',
+// 'dimension':'90 X 50',
+// 'size':'500 Sq.yds'
+
+// },
+// {
+//  'available':true,
+// 'coords':[5787,921,5861,900,5873,941,5800,962],
+// 'name':'880',
+// 'shape':'poly',
+// 'facing':'west',
+// 'dimension':'90 X 50',
+// 'size':'500 Sq.yds'
+
+// },
+
+// //...............
+
+
+
+
+
+
+// {
+//  'available':true,
+//  'coords':[5872,1208,5945,1187,5958,1228,5884,1249],
+//  'name':'887',
+// 'shape':'poly',
+//  'facing':'west',
+//  'dimension':'90 X 50',
+//  'size':'500 Sq.yds'
+ 
+// },
+
+// {
+// 'available':true,
+// 'coords':[5607,974,5681,953,5692,994,5619,1015],
+// 'name':'900',
+// 'shape':'poly',
+// 'facing':'west',
+// 'dimension':'90 X 50',
+// 'size':'500 Sq.yds'
+
+// },
+// {
+// 'available':true,
+// 'coords':[5619,1015,5692,994,5704,1035,5631,1056],
+// 'name':'901',
+// 'shape':'poly',
+// 'facing':'west',
+// 'dimension':'90 X 50',
+// 'size':'500 Sq.yds'
+
+// },
+// {
+// 'available':true,
+// 'coords':[5631,1056,5704,1035,5717,1076,5643,1098],
+// 'name':'902',
+// 'shape':'poly',
+// 'facing':'west',
+// 'dimension':'90 X 50',
+// 'size':'500 Sq.yds'
+
+// },
+// {
+//  'available':true,
+// 'coords':[5643,1098,5717,1076,5729,1117,5655,1139],
+// 'name':'903',
+// 'shape':'poly',
+// 'facing':'west',
+// 'dimension':'90 X 50',
+// 'size':'500 Sq.yds'
+
+// },
+// {
+// 'available':true,
+// 'coords':[5512,649,5585,628,5593,657,5520,679],
+// 'name':'923',
+// 'shape':'poly',
+// 'facing':'west',
+// 'dimension':'90 X 36',
+// 'size':'360 Sq.yds'
+
+// },
+// {
+//  'available':true,
+// 'coords':[5591,739,5629,727,5650,801,5613,812],
+// 'name':'942',
+// 'shape':'poly',
+// 'facing':'south',
+// 'dimension':'90 X 46',
+// 'size':'460 Sq.yds'
+
+// },
+// {
+// 'available':true,
+// 'coords':[5550,751,5591,739,5613,812,5572,824],
+// 'name':'943',
+// 'shape':'poly',
+// 'facing':'south',
+// 'dimension':'90 X 50',
+// 'size':'500 Sq.yds'
+
+// },
+
+// {
+// 'available':true,
+// 'coords':[5509,763,5550,751,5572,824,5531,837],
+// 'name':'944',
+// 'shape':'poly',
+// 'facing':'south',
+// 'dimension':'90 X 50',
+// 'size':'500 Sq.yds'
+
+// },
+// {
+// 'available':false,
+// 'coords':[5330,700,5387,682,5398,719,5341,736],
+// 'name':'947',
+// 'shape':'poly',
+// 'facing':'west',
+// 'dimension':'70 X 45',
+// 'size':'350 Sq.yds'
+
+// },
+// {
+// 'available':true,
+// 'coords':[4635,1065,4708,1043,4720,1080,4646,1105],
+// 'name':'1011',
+// 'shape':'poly',
+// 'facing':'west',
+// 'dimension':'90 X 50',
+// 'size':'500 Sq.yds'
+
+// },
+// {
+// 'available':true,
+// 'coords':[4646,1105,4720,1084,4732,1125,4659,1147],
+// 'name':'1012',
+// 'shape':'poly',
+// 'facing':'west',
+// 'dimension':'90 X 50',
+// 'size':'500 Sq.yds'
+
+// },
+// {
+// 'available':true,
+// 'coords':[4659,1147,4732,1125,4744,1166,4671,1188],
+// 'name':'1013',
+// 'shape':'poly',
+// 'facing':'west',
+// 'dimension':'90 X 50',
+// 'size':'500 Sq.yds'
+
+// },
+// {
+// 'available':true,
+// 'coords':[4671,1188,4744,1166,4756,1207,4683,1229],
+// 'name':'1014',
+// 'shape':'poly',
+// 'facing':'west',
+// 'dimension':'90 X 50',
+// 'size':'500 Sq.yds'
+
+// },
+// {
+//  'available':true,
+// 'coords':[4683,1229,4756,1207,4768,1248,4695,1270],
+// 'name':'1015',
+// 'shape':'poly',
+// 'facing':'west',
+// 'dimension':'90 X 50',
+// 'size':'500 Sq.yds'
+
+// },
+// {
+//  'available':true,
+// 'coords':[4695,1270,4768,1248,4781,1289,4707,1310],
+// 'name':'1016',
+// 'shape':'poly',
+// 'facing':'west',
+// 'dimension':'90 X 50',
+// 'size':'500 Sq.yds'
+
+// },
+// {
+//  'available':true,
+// 'coords':[4380,926,4453,903,4466,945,4392,967],
+// 'name':'1034',
+// 'shape':'poly',
+// 'facing':'west',
+// 'dimension':'90 X 50',
+// 'size':'500 Sq.yds'
+
+// },
+
+
+
+// //.................
+
+
+
+
+
+
+// {
+//  'available':true,
+//  'coords':[4392,967,4466,954,4478,986,4404,1008],
+//  'name':'1035',
+// 'shape':'poly',
+//  'facing':'west',
+//  'dimension':'90 X 50',
+//  'size':'500 Sq.yds'
+ 
+// },
+
+// {
+// 'available':true,
+// 'coords':[4253,1132,4294,1120,4316,1194,4275,1206],
+// 'name':'1049',
+// 'shape':'poly',
+// 'facing':'south',
+// 'dimension':'',
+// 'size':'500 Sq.yds'
+
+// },
+// {
+// 'available':true,
+// 'coords':[4418,1085,4458,1072,4480,1146,4439,1158],
+// 'name':'1053',
+// 'shape':'poly',
+// 'facing':'south',
+// 'dimension':'90 X 50',
+// 'size':'500 Sq.yds'
+
+// },
+// {
+// 'available':true,
+// 'coords':[4445,1815,4519,1794,4531,1835,4458,1857],
+// 'name':'1103',
+// 'shape':'poly',
+// 'facing':'west',
+// 'dimension':'90 X 50',
+// 'size':'500 Sq.yds'
+
+// },
+// {
+//  'available':true,
+// 'coords':[4458,1857,4531,1835,4543,1876,4470,1898],
+// 'name':'1104',
+// 'shape':'poly',
+// 'facing':'west',
+// 'dimension':'90 X 50',
+// 'size':'500 Sq.yds'
+
+// },
+// {
+// 'available':true,
+// 'coords':[4470,1898,4543,1876,4555,1918,4482,1939],
+// 'name':'1105',
+// 'shape':'poly',
+// 'facing':'west',
+// 'dimension':'90 X 50',
+// 'size':'500 Sq.yds'
+
+// },
+// {
+//  'available':true,
+// 'coords':[4482,1939,4555,1918,4567,1958,4494,1980],
+// 'name':'1106',
+// 'shape':'poly',
+// 'facing':'west',
+// 'dimension':'90 X 50',
+// 'size':'500 Sq.yds'
+
+// },
+// {
+// 'available':true,
+// 'coords':[4494,1980,4567,1958,4579,2000,4506,2021],
+// 'name':'1107',
+// 'shape':'poly',
+// 'facing':'west',
+// 'dimension':'90 X 50',
+// 'size':'500 Sq.yds'
+
+// },
+
+// {
+// 'available':true,
+// 'coords':[4506,2021,4579,2000,4592,2040,4518,2062],
+// 'name':'1108',
+// 'shape':'poly',
+// 'facing':'west',
+// 'dimension':'90 X 50',
+// 'size':'500 Sq.yds'
+
+// },
+// {
+// 'available':true,
+// 'coords':[5000,1608,5041,1597,5063,1669,5021,1682],
+// 'name':'1147',
+// 'shape':'poly',
+// 'facing':'south',
+// 'dimension':'90 X 50',
+// 'size':'500 Sq.yds'
+
+// },
+// {
+// 'available':false,
+// 'coords':[5530,1318,5571,1306,5579,1331,5537,1342],
+// 'name':'1175',
+// 'shape':'poly',
+// 'facing':'west',
+// 'dimension':'50 X 30',
+// 'size':'166.67 Sq.yds'
+
+// },
+// {
+// 'available':true,
+// 'coords':[5537,1342,5579,1331,5587,1355,5544,1367],
+// 'name':'1176',
+// 'shape':'poly',
+// 'facing':'west',
+// 'dimension':'50 X 30',
+// 'size':'166.67 Sq.yds'
+
+// },
+// {
+// 'available':true,
+// 'coords':[5517,1456,5553,1446,5575,1518,5538,1530],
+// 'name':'1179',
+// 'shape':'poly',
+// 'facing':'south',
+// 'dimension':'90 X 45',
+// 'size':'450 Sq.yds'
+
+// },
+// {
+// 'available':true,
+// 'coords':[5481,1467,5517,1456,5538,1530,5502,1541],
+// 'name':'1180',
+// 'shape':'poly',
+// 'facing':'south',
+// 'dimension':'90 X 44.3',
+// 'size':'442.50 Sq.yds'
+
+// },
+// {
+//  'available':true,
+// 'coords':[5402,1490,5443,1478,5465,1551,5424,1564],
+// 'name':'1182',
+// 'shape':'poly',
+// 'facing':'south',
+// 'dimension':'90 X 50',
+// 'size':'500 Sq.yds'
+
+// },
+
+
+
+
 
 
 

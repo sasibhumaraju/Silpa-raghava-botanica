@@ -92,7 +92,7 @@
 }
 
 
-@media screen and (max-width: 1125px) {
+/* @media screen and (max-width: 1125px) {
     .PlotCard{
         height: 250px;
         display: flex;
@@ -100,7 +100,7 @@
         overflow: scroll;
         overflow-x: hidden;
     }
-  }
+  } */
   @media screen and (max-width: 400px) {
     .image-container{
 
