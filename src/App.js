@@ -10,9 +10,9 @@ function App() {
   return (
    
     <div className="App" >
-    <Pointer></Pointer>
+    
     <PlotsBody></PlotsBody>
-    <Compass></Compass>
+   
      
     </div>
   

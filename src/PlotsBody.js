@@ -9,6 +9,9 @@ import A from './list.js'
 import PrismaZoom from 'react-prismazoom'
 import { MapInteractionCSS } from 'react-map-interaction';
 import {TransformComponent, TransformWrapper} from 'react-zoom-pan-pinch'
+import Compass from "./components/Compass";
+import Pointer from "./components/Pointer";
+import close from './assets/close.svg'
 
 class MyMap extends React.Component {
 
@@ -21,22 +24,29 @@ class MyMap extends React.Component {
         
             this.state = {
                 currentData : {},
-                active:false
+                active:false,
+                showCard:false
             }
         }
   
-
+        closecard = () => {
+            this.setState({
+                active : false
+            })
+        }
+    
     handleClick=( obj)=>{
        console.log("entered")
-        this.setState({currentData : obj,active:true});
+        this.setState({currentData : obj,active:true,showCard:true});
         console.log(obj.name);
           }
 
 
     render(){
-        const card = <PlotCard PlotNum={this.state.currentData.name} Available={this.state.currentData.available} Dimension={this.state.currentData.dimension} Size={this.state.currentData.size} Facing={this.state.currentData.facing}></PlotCard>;
+        const closeButton =  <div className="close" onClick={this.closecard}><img className="close-body" src={close}></img></div>
+        const card =<> <PlotCard PlotNum={this.state.currentData.name} Available={this.state.currentData.available} Dimension={this.state.currentData.dimension} Size={this.state.currentData.size} Facing={this.state.currentData.facing} Slidein={this.state.active}></PlotCard> {this.state.active? closeButton : ''} </>;
         return(
-            <div>
+            <div className="PlotsBody">
             <div className="container"    > 
             
                 <div className="image-container"  >
@@ -105,11 +115,14 @@ class MyMap extends React.Component {
               {/* </TransformWrapper> */}
               </PrismaZoom>
               </div>
+             <Compass></Compass>
+             <Pointer></Pointer>
+              {this.state.showCard? card : ''} 
               </div>
               
               </div>
           
-              {this.state.active? card  : null}   
+             
             </div>
         );
     }

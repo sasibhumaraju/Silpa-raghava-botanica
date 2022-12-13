@@ -1,22 +1,26 @@
 import React from "react";
 import './PlotsCard.css';
 
+
 class PlotCard extends React.Component {
+
     static defaultProps = {
         Available : false,
         PlotNum : 0,
         Facing : 'east',
         Dimension : '0',
-        Size:'0'
-
-
-
+        Size:'0',
+     
     }
+
+ 
 
     render(){
         const status = this.props.Available? <div className="available">Available</div> : <div className="sold">Sold</div>
+        const PlotcardClass = this.props.Slidein? "PlotCard-slidein" : "PlotCard-slideout";
+
         return(
-            <div className="PlotCard">
+            <div className={PlotcardClass}>
                 <div className="PlotBody">
                     <div className="plotElement"> 
                         <div className="PlotElementHeading">Plot No</div>
@@ -40,6 +44,7 @@ class PlotCard extends React.Component {
                         <div className="PlotStatusElementHeading">Status      </div>
                         <div className="PlotStatusElementBody">{status}</div>
                   </div>
+                 
             </div>
         );
     }
