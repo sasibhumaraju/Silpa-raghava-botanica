@@ -93,7 +93,7 @@ class MyMap extends React.Component {
                 map={{ name: "my-map",
                        areas: [
                             ...A.map((v)=>{
-                                let c = (v.available)? 'rgba(4, 255, 75, 0.2)' : 'rgba(255, 0, 0, 0.2)'
+                                let c = (v.available)? 'rgba(4, 255, 75, 0.25)' : 'rgba(255, 0, 0, 0.25)'
                             return {...v,preFillColor: c}
                                          })]    }}  
     	onClick={area => this.handleClick(area)}
