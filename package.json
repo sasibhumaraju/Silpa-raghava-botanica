@@ -11,7 +11,7 @@
     "react": "^16.5.0",
     "react-dom": "^16.5.0",
     "react-element-pan": "^2.0.0",
-    "react-image-mapper": "^0.0.15",
+    "react-image-mapper": "^0.0.14",
     "react-img-mapper": "^1.4.0",
     "react-intense": "^0.1.14",
     "react-map-interaction": "^2.1.0",
