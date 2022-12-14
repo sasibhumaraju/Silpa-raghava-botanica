@@ -97,8 +97,9 @@ class MyMap extends React.Component {
                         <PrismaZoom maxZoom={18} >
 
         <ImageMapper src={map}
+               
                 lineWidth={0.00001} 
-                width={  1125} 
+                width={1125} 
                 imgWidth={12413} 
                 map={{ name: "my-map",
                        areas: [
