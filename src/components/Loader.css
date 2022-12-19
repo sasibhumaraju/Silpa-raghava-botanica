@@ -13,6 +13,7 @@
     /* background-color: #000000; */
     display: grid;
     place-items: center;
+    
   }
 
   .loader {
