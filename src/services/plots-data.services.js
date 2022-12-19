@@ -10,7 +10,7 @@ import {
 } from 'firebase/firestore';
 
 // database reference based table name
-const plotsDataCollectionRef = collection(db,'plots-data');
+const plotsDataCollectionRef = collection(db,'plots');
 
 // CRUD operation 
 class PlotsDataService {
@@ -22,13 +22,13 @@ class PlotsDataService {
 
     // update existing element
     updatePlotsData = (id,newPlot) =>  {
-        const plotDataDoc = doc(db, 'plots-data',id);
+        const plotDataDoc = doc(db, 'plots',id);
         return updateDoc(plotDataDoc, newPlot);
     }
 
     // delete existing element
     deletePlotsData = (id) =>  {
-        const plotDataDoc = doc(db, 'plots-data',id);
+        const plotDataDoc = doc(db, 'plots',id);
         return deleteDoc(plotDataDoc);
     }
 

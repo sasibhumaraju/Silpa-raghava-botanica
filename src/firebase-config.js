@@ -6,14 +6,14 @@ import {getFirestore} from 'firebase/firestore'
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+
 const firebaseConfig = {
-  apiKey: "AIzaSyDaqMBqH26hoSJ6X1LihaExlaUwxWi1nxc",
-  authDomain: "plots-f0478.firebaseapp.com",
-  projectId: "plots-f0478",
-  storageBucket: "plots-f0478.appspot.com",
-  messagingSenderId: "157517640561",
-  appId: "1:157517640561:web:414d70345592472e323cd0",
-  measurementId: "G-TLX334Y4R5"
+  apiKey: "AIzaSyDZsqwEHEDDRGXbl06SVRTRNPkFAdJvk60",
+  authDomain: "real-plots.firebaseapp.com",
+  projectId: "real-plots",
+  storageBucket: "real-plots.appspot.com",
+  messagingSenderId: "225423885166",
+  appId: "1:225423885166:web:c87d5557b36992104af77f"
 };
 
 // Initialize Firebase
