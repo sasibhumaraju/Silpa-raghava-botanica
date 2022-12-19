@@ -168,14 +168,14 @@ box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     @media screen and (max-width: 1125px) {
       .image-container{
 
-        width: calc(100vw);
+        width: calc(100vw - 100px);
     
     }
     }
     @media screen and (max-width: 400px) {
       .image-container{
 
-        width: calc(100vw);
+        width: calc(100vw - 40px);
     
     }
     .container {

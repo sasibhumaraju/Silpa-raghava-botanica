@@ -46,6 +46,7 @@ class MyMap extends React.Component {
         }
 
             componentDidMount() {
+              
                this.getPlotsData();
             }
 
@@ -63,10 +64,13 @@ class MyMap extends React.Component {
                         temp2 = temp.map((doc)=>doc.plots)
     
                         sessionStorage.setItem("plots", JSON.stringify(temp2[0]));
-                        this.setState({
-                            plotsMapListData : temp2[0],
-                            updated : false
+                        setTimeout(()=> {
+                            this.setState({
+                                plotsMapListData : temp2[0],
+                                updated : false
+                            },2000)
                         })
+                       
                     }
                     catch (err) {
                            console.log("check your internet connetion")
@@ -77,10 +81,13 @@ class MyMap extends React.Component {
                 else 
                 {
                     console.log('llllllll',"yers")
+                   setTimeout(()=>{
                     this.setState({
                         plotsMapListData : JSON.parse(plots),
                         updated : false
                     })
+                   },2000)
+                 
 
                 
                 }
@@ -173,7 +180,7 @@ putToDatabase = () => {
                          <Compass></Compass>
                          <Pointer></Pointer>
                          <Logo></Logo>
-                         {/* <Share></Share> */}
+                         <Share></Share>
                          {this.state.showCard? card : ''} 
                      </div>
                  </div>

@@ -1,42 +1,39 @@
-
-
 .Share{
-    /* position: absolute;
-    right: 15px;
-    bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; */
-}
-.ShareControl {
-    position: absolute;
-    right: 15px;
-    bottom: 20px;
-    cursor: pointer;
     width: 50px;
     height: 50px;
-    background-color: rgba(0, 0, 0, 0.85);
-    background-color: red;
-    /* border-radius: 50%; */
+    /* background-color: rgba(0, 0, 0, 0.85); */
+    border-radius: 50%;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 20px;
+    right: 15px;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+.ShareControl{
+    background-color: rgba(0, 0, 0, 0.85);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
 }
 
 .ShareImg{
-   
-    /* transform: rotate(180deg);  */
-     width: 23px;
+     width: 22px;
      filter: invert();
-   
 }
+
 
 
 .socialIconsActive {
-    width: 50px;
-    background-color: rgba(0, 0, 0, 0.85);
-    border-radius: 5px;
+    position: absolute;
+   
+    border-radius: 2px;
     color:white;
     overflow: hidden;
     display: flex;
@@ -51,41 +48,13 @@
     padding: 0;
     margin: 0;
     position: absolute;
-    bottom: 60px;
+    bottom: 80px;
+    right: 15px;
     outline: none;
     box-sizing: border-box;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     transition: 1s;
-    animation-duration: 1s;
-    animation-name: slideUp;
-}
-
-
-.socialIconsDeactive {
-    width: 50px;
-    height: 0px;
-    background-color: rgba(0, 0, 0, 0.85);
-    border-radius: 5px;
-    color:white;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: all .4s ease;
-    transition-duration: 0.4s;
-    transition-timing-function: ease;
-    transition-delay: 0s;
-    transition-property: all;
-    transition: all .4s cubic-bezier(.54,.84,.69,.56);
-    padding: 0;
-    margin: 0;
-    position: absolute;
-    bottom: 60px;
-    outline: none;
-    box-sizing: border-box;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-    transition: 1s;
-    animation-duration: 1s;
+    animation-duration: 0.3s;
     animation-name: slideUp;
 }
 
@@ -95,11 +64,65 @@
     }
   
     to {
-        height: 100px;
+        height: 200px;
     }
   }
 
-  .shareIcon {
-    width: 23px;
-    margin: 10px;
+  .socialIconsDeactive {
+    position: absolute;
+    border-radius: 2px;
+    color:white;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all .4s ease;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transition-property: all;
+    transition: all .4s cubic-bezier(.54,.84,.69,.56);
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    bottom: 80px;
+    right: 15px;
+    outline: none;
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    transition: 1s;
+    animation-duration: 0.3s;
+    animation-name: slideDown;
+    height: 0px;
+}
+
+@keyframes slideDown {
+    from {
+      height: 200px;
+    }
+  
+    to {
+        height: 0px;
+    }
+  }
+
+
+
+  .ShareIcon {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.85);
+    /* padding: 10px; */
+    /* height: 100px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    cursor: pointer;
+    /* margin: 20px; */
+  }
+
+  .ShareIconBody {
+    width: 25px;
+    height: 25px;
   }

@@ -10,6 +10,10 @@
     flex-direction: column;
     filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0,1));
     animation: MoveUpDown 5s ease infinite;
+    /* background-color: red; */
+    width: 200px;
+   margin-left: calc(50% - 100px);
+  
    
 }
 
