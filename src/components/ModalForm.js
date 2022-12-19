@@ -106,7 +106,7 @@ class ModalForm extends React.Component{
         return (
             <div className='Modal'>
                 <div className='ModalBody'>
-                 <div className='Heading'> Request Prize</div>  
+                 <div className='Heading'> Request Price</div>  
                  <div className='HeadingContent'>Hey! Thank you for Interest in our property please provide us your details so that we can get back to you.</div> 
                  <form className='ModalForm' onSubmit={this.handleSubmit}>
                  <input id='name' name="name" type='text' placeholder='Your Name' value={this.state.name} onChange={this.handleOnChange}></input>
