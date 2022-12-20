@@ -39,7 +39,7 @@ class PlotsDataService {
 
     // get particular element
     getPlotsData = (id) =>  {
-        const plotDataDoc = doc(db, 'plots-data',id);
+        const plotDataDoc = doc(db, 'plots',id);
         return getDoc(plotDataDoc);
     }
 

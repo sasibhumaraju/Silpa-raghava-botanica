@@ -55,7 +55,7 @@ class MyMap extends React.Component {
                  var temp = [];
                  var temp2 = [];        
                  let plots = await sessionStorage.getItem("plots") || null;
-        //   console.log('llllllllll,',plots)
+          console.log('llllllllll,',plots)
                 if(plots === null || plots === 'undefined') {
                   
                     try{
@@ -67,9 +67,9 @@ class MyMap extends React.Component {
                         setTimeout(()=> {
                             this.setState({
                                 plotsMapListData : temp2[0],
-                                updated : false
-                            },2000)
-                        })
+                                // updated : false
+                            })
+                          },2000)
                        
                     }
                     catch (err) {
@@ -142,7 +142,7 @@ putToDatabase = () => {
     render(){
         const closeButton =  <div className="close" onClick={this.closecard}><img className="close-body" src={close}></img></div>
         const card =<> <PlotCard PlotNum={this.state.currentData.name} Available={this.state.currentData.available} Dimension={this.state.currentData.dimension} Size={this.state.currentData.size} Facing={this.state.currentData.facing} Slidein={this.state.active}></PlotCard> {this.state.active? closeButton : ''} </>;
-        const mapper =  <ImageMapperWeb  src={map} lineWidth={0.00001}  width={1125}  imgWidth={12413} map={{   name: "my-map",areas: [...A.plots.map((v)=>{ if(isNaN(v.name)){ return {...v,preFillColor: 'rgba(255,215,0,0.05)',  } }  let c = (v.available)? 'rgba(50, 205, 50, 0.25)' : 'rgba(220, 20, 60, 0.25)'; return {...v,preFillColor: c,  }       })]    }}  onClick={area => this.handleClick(area)} onImageClick={event=>{this.handleOnImageClick(event)}}/> ;
+        const mapper =  <ImageMapperWeb  src={map} lineWidth={0.00001}  width={1125}  imgWidth={12413} map={{   name: "my-map",areas: [...this.state.plotsMapListData.map((v)=>{ if(isNaN(v.name)){ return {...v,preFillColor: 'rgba(255,215,0,0.05)',  } }  let c = (v.available)? 'rgba(50, 205, 50, 0.25)' : 'rgba(220, 20, 60, 0.25)'; return {...v,preFillColor: c,  }       })]    }}  onClick={area => this.handleClick(area)} onImageClick={event=>{this.handleOnImageClick(event)}}/> ;
         let k =  <div className="submitdrawing">
         <form onSubmit={this.handleFormSubmit}>
                <input type="text" 
