@@ -45,12 +45,13 @@
     }
   } */
   .PlotsBody{
-    width: 100vw;
-    height: 100vh;
+    /* width: 100%;
+    height: 100%; */
     display: flex;
     justify-content: center;
     align-items: center;
     overflow-x: hidden;
+    margin:20px;
   }
   .inner-image-container{
     /* width: 100%;
@@ -168,14 +169,16 @@ box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     @media screen and (max-width: 1125px) {
       .image-container{
 
-        width: calc(100vw - 100px);
+        /* width: calc(100vw - 100px); */
+        width: 100%;
     
     }
     }
     @media screen and (max-width: 400px) {
       .image-container{
 
-        width: calc(100vw - 40px);
+        /* width: calc(100vw - 40px); */
+        width: 100%;
     
     }
     .container {
