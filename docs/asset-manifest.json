@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/real-estate-plots/static/css/main.8ab2b41f.css",
-    "main.js": "/real-estate-plots/static/js/main.c009cdfd.js",
-    "static/js/787.15fde41a.chunk.js": "/real-estate-plots/static/js/787.15fde41a.chunk.js",
-    "static/media/map2.jpg": "/real-estate-plots/static/media/map2.84a11b28f78f671f8866.jpg",
-    "static/media/botanical.png": "/real-estate-plots/static/media/botanical.13a1f5c380511675d9df.png",
-    "static/media/share.png": "/real-estate-plots/static/media/share.8f7deca4e2be5ff91343.png",
-    "static/media/whatsapp.svg": "/real-estate-plots/static/media/whatsapp.caced05ed020a5031e47f6f965ba48f0.svg",
-    "static/media/hand.svg": "/real-estate-plots/static/media/hand.1fc1a1ee3d890c154106d6377d682414.svg",
-    "index.html": "/real-estate-plots/index.html",
-    "static/media/linkedin-in.svg": "/real-estate-plots/static/media/linkedin-in.10875e9721c9b757172b0265ed5c4583.svg",
-    "static/media/facebook.svg": "/real-estate-plots/static/media/facebook.a6a566fe4b9550dafcd25d73f36cb0b8.svg",
-    "static/media/close.svg": "/real-estate-plots/static/media/close.60cf68c83c1745a9a5a3497035f6101d.svg",
-    "static/media/mail.svg": "/real-estate-plots/static/media/mail.0f7c936741f8937240dd3c3300b508e8.svg",
-    "main.8ab2b41f.css.map": "/real-estate-plots/static/css/main.8ab2b41f.css.map",
-    "main.c009cdfd.js.map": "/real-estate-plots/static/js/main.c009cdfd.js.map",
-    "787.15fde41a.chunk.js.map": "/real-estate-plots/static/js/787.15fde41a.chunk.js.map"
+    "main.css": "/Silpa-raghava-botanica/static/css/main.8ab2b41f.css",
+    "main.js": "/Silpa-raghava-botanica/static/js/main.2ee32fb1.js",
+    "static/js/787.15fde41a.chunk.js": "/Silpa-raghava-botanica/static/js/787.15fde41a.chunk.js",
+    "static/media/map2.jpg": "/Silpa-raghava-botanica/static/media/map2.84a11b28f78f671f8866.jpg",
+    "static/media/botanical.png": "/Silpa-raghava-botanica/static/media/botanical.13a1f5c380511675d9df.png",
+    "static/media/share.png": "/Silpa-raghava-botanica/static/media/share.8f7deca4e2be5ff91343.png",
+    "static/media/whatsapp.svg": "/Silpa-raghava-botanica/static/media/whatsapp.caced05ed020a5031e47f6f965ba48f0.svg",
+    "index.html": "/Silpa-raghava-botanica/index.html",
+    "static/media/hand.svg": "/Silpa-raghava-botanica/static/media/hand.1fc1a1ee3d890c154106d6377d682414.svg",
+    "static/media/linkedin-in.svg": "/Silpa-raghava-botanica/static/media/linkedin-in.10875e9721c9b757172b0265ed5c4583.svg",
+    "static/media/facebook.svg": "/Silpa-raghava-botanica/static/media/facebook.a6a566fe4b9550dafcd25d73f36cb0b8.svg",
+    "static/media/close.svg": "/Silpa-raghava-botanica/static/media/close.60cf68c83c1745a9a5a3497035f6101d.svg",
+    "static/media/mail.svg": "/Silpa-raghava-botanica/static/media/mail.0f7c936741f8937240dd3c3300b508e8.svg",
+    "main.8ab2b41f.css.map": "/Silpa-raghava-botanica/static/css/main.8ab2b41f.css.map",
+    "main.2ee32fb1.js.map": "/Silpa-raghava-botanica/static/js/main.2ee32fb1.js.map",
+    "787.15fde41a.chunk.js.map": "/Silpa-raghava-botanica/static/js/787.15fde41a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8ab2b41f.css",
-    "static/js/main.c009cdfd.js"
+    "static/js/main.2ee32fb1.js"
   ]
 }
