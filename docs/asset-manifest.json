@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Silpa-raghava-botanica/static/css/main.4114caf4.css",
+    "main.css": "/Silpa-raghava-botanica/static/css/main.8ab2b41f.css",
     "main.js": "/Silpa-raghava-botanica/static/js/main.2ee32fb1.js",
     "static/js/787.15fde41a.chunk.js": "/Silpa-raghava-botanica/static/js/787.15fde41a.chunk.js",
     "static/media/map2.jpg": "/Silpa-raghava-botanica/static/media/map2.84a11b28f78f671f8866.jpg",
@@ -13,12 +13,12 @@
     "static/media/facebook.svg": "/Silpa-raghava-botanica/static/media/facebook.a6a566fe4b9550dafcd25d73f36cb0b8.svg",
     "static/media/close.svg": "/Silpa-raghava-botanica/static/media/close.60cf68c83c1745a9a5a3497035f6101d.svg",
     "static/media/mail.svg": "/Silpa-raghava-botanica/static/media/mail.0f7c936741f8937240dd3c3300b508e8.svg",
-    "main.4114caf4.css.map": "/Silpa-raghava-botanica/static/css/main.4114caf4.css.map",
+    "main.8ab2b41f.css.map": "/Silpa-raghava-botanica/static/css/main.8ab2b41f.css.map",
     "main.2ee32fb1.js.map": "/Silpa-raghava-botanica/static/js/main.2ee32fb1.js.map",
     "787.15fde41a.chunk.js.map": "/Silpa-raghava-botanica/static/js/787.15fde41a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4114caf4.css",
+    "static/css/main.8ab2b41f.css",
     "static/js/main.2ee32fb1.js"
   ]
 }
