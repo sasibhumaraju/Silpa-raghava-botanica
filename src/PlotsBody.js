@@ -54,9 +54,10 @@ class MyMap extends React.Component {
                  var data = [];
                  var temp = [];
                  var temp2 = [];        
-                 let plots = await sessionStorage.getItem("plots") || null;
-          console.log('llllllllll,',plots)
-                if(plots === null || plots === 'undefined') {
+                //  let plots = await sessionStorage.getItem("plots") || null;
+        //   console.log('llllllllll,',plots)
+        //         if(plots === null || plots === 'undefined')
+         {
                   
                     try{
                         data = await plotsDataServices.getAllPlotsData();
@@ -78,19 +79,19 @@ class MyMap extends React.Component {
                     
                   
                 }      
-                else 
-                {
-                    console.log('llllllll',"yers")
-                   setTimeout(()=>{
-                    this.setState({
-                        plotsMapListData : JSON.parse(plots),
-                        updated : false
-                    })
-                   },2000)
+                // else 
+                // {
+                //     console.log('llllllll',"yers")
+                //    setTimeout(()=>{
+                //     this.setState({
+                //         plotsMapListData : JSON.parse(plots),
+                //         updated : false
+                //     })
+                //    },2000)
                  
 
                 
-                }
+                // }
             }
 
 
