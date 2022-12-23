@@ -76,23 +76,34 @@ class ModalForm extends React.Component{
       var pt = this.validateNumber(this.state.phonenumber)
       var nt = this.validateName(this.state.name)
 
-      console.log('email - ',emailt)
-      console.log('phone - ',pt)
-      console.log('anme - ',nt)
+    //   console.log('email - ',emailt)
+    //   console.log('phone - ',pt)
+    //   console.log('anme - ',nt)
 
       if( (emailt && pt) && nt ) {
         this.setState({
             isLoading : true
         })
         var newRequestData = {
-            'Name' : `${this.state.name}`,
-            'Number' : `${this.state.phonenumber}`,
-            'Email' : `${this.state.email}`,
-            'PlotNumber' : `${this.props.plotNumber}`
+            'name' : `${this.state.name}`,
+            'phone' : `${this.state.phonenumber}`,
+            'email' : `${this.state.email}`,
+            'plotNumber' : `${this.props.plotNumber}`
               
          }
-     await   UserRequests.addRequestData( newRequestData);
-     this.props.closeModalFuntion();
+
+      var snapshots =  await  UserRequests.getAllRequestsData();
+      var data = snapshots.docs.map((data)=>data.data().requests);
+      data[0].push(newRequestData)
+      var newArrayData = {
+        'requests' : [...data[0]]
+      }
+      console.log(newArrayData)
+       await   UserRequests.updateRequestsData('tjepwaktliW5sPtRxDYz',newArrayData);
+      this.props.closeModalFuntion();
+
+
+
       }
     }
 
