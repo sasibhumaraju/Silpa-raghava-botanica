@@ -93,10 +93,11 @@ class ModalForm extends React.Component{
          }
 
       var snapshots =  await  UserRequests.getAllRequestsData();
-      var data = snapshots.docs.map((data)=>data.data().requests);
-      data[0].push(newRequestData)
+      var data = snapshots.docs.map((data)=>data.data());
+      console.log(data[0])
+      data[0].requests.push(newRequestData)
       var newArrayData = {
-        'requests' : [...data[0]]
+        'requests' : [...data[0].requests]
       }
       console.log(newArrayData)
        await   UserRequests.updateRequestsData('tjepwaktliW5sPtRxDYz',newArrayData);
