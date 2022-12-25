@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "real-plots"
-  }
+    "default": "silpa-raghava-botanica",
+    "silpa-raghava-botanica": "silpa-raghava-botanica"
+  },
+  "targets": {},
+  "etags": {}
 }
