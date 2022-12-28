@@ -1,5 +1,5 @@
 import React from "react";
-import compass from '../assets/compass.png'
+import compass from '../assets/compass.svg'
 import './Comapss.css'
 
 class Compass extends React.Component {
@@ -7,7 +7,7 @@ class Compass extends React.Component {
     render(){
         return(
             <div className="Compass">
-                  <div className="N">s</div>
+                  <div className="N">N</div>
                  <img className="c-img"  src={compass}></img>
                 
             </div>

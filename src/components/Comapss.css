@@ -16,12 +16,16 @@
     color: black;
     font-weight: 600;
     color: white;
-    font-size: 15px;
+    font-size: 10px;
+    margin-bottom: 4px;
+    
+
 
 }
 .c-img{
-    /* transform: rotate(180deg); */
-    width: 27px;
+    transform: rotate(-45deg);
+    width: 18.5px;
     filter: invert();
+
 }
 
