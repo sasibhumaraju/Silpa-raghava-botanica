@@ -1,6 +1,7 @@
 import React  from "react";
 import './Loader.css'
-import logo from '../assets/botanical.png'
+import logo from '../assets/botanical.png';
+
 class Loader extends React.Component{
 
     render() {

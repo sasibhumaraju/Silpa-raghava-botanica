@@ -21,8 +21,12 @@ import Share from './components/Share.js'
 import { StreamBuilder, Snapshot, ConnectionState } from "react-stream-builder";
 import { async } from "@firebase/util";
 import { doc } from "firebase/firestore";
-
-
+import kim from './user-info.js'
+import ReactPlayer from 'react-player';
+import MediaPlayer from './components/MediaPlayer';
+import MediaPlayList from './components/MediaPlayList';
+import Gallery from './components/Gallery'
+import BottomNav from "./components/BottomNav";
 
 
 
@@ -41,7 +45,8 @@ class MyMap extends React.Component {
                 showCard:false,
                 formPlotNum:0,
                 plotsMapListData : [],
-                updated: true
+                updated: true,
+                pop : false
             }
         }
 
@@ -67,7 +72,7 @@ class MyMap extends React.Component {
                         sessionStorage.setItem("plots", JSON.stringify(temp2[0]));
                         setTimeout(()=> {
                             this.setState({
-                                plotsMapListData : temp2[0],
+                                plotsMapListData : temp2[0].concat(kim),
                                 // updated : false
                             })
                           },2000)
@@ -79,19 +84,7 @@ class MyMap extends React.Component {
                     
                   
                 }      
-                // else 
-                // {
-                //     console.log('llllllll',"yers")
-                //    setTimeout(()=>{
-                //     this.setState({
-                //         plotsMapListData : JSON.parse(plots),
-                //         updated : false
-                //     })
-                //    },2000)
-                 
-
-                
-                // }
+              
             }
 
 
@@ -99,10 +92,23 @@ class MyMap extends React.Component {
             this.setState({
                 active : false
             })}
+
+    popUpHelper = () => {
+        this.setState({
+            pop : !this.state.pop
+           })
+        }
     
     handleClick = ( obj )=>{
-        this.setState({currentData : obj,active:true,showCard:true});
-          }
+        console.log(obj.name)
+        if(isNaN(obj.name)){ 
+            this.setState({currentData : obj,active:false,showCard:false});
+            this.popUpHelper();
+         }  
+         else {
+            this.setState({currentData : obj,active:true,showCard:true});
+         }          
+    }
 
     handleOnImageClick = (event) => {
         // console.log("----->"+event.nativeEvent.offsetX)
@@ -133,17 +139,14 @@ class MyMap extends React.Component {
 
     }
 
-putToDatabase = () => {
-   
-        //  plotsDataServices.addPlotsData(A);
-   
-}
+
 
 
     render(){
+        const popUp = this.state.pop?  <MediaPlayer helper={this.popUpHelper} AutoPopUp ImageLink={this.state.currentData.url} ></MediaPlayer> : ''
         const closeButton =  <div className="close" onClick={this.closecard}><img className="close-body" src={close}></img></div>
         const card =<> <PlotCard PlotNum={this.state.currentData.name} Available={this.state.currentData.available} Dimension={this.state.currentData.dimension} Size={this.state.currentData.size} Facing={this.state.currentData.facing} Slidein={this.state.active}></PlotCard> {this.state.active? closeButton : ''} </>;
-        const mapper =  <ImageMapperWeb  src={map} lineWidth={0.00001}  width={1125}  imgWidth={12413} map={{   name: "my-map",areas: [...this.state.plotsMapListData.map((v)=>{ if(isNaN(v.name)){ return {...v,preFillColor: 'rgba(255,215,0,0.05)',  } }  let c = (v.available)? 'rgba(50, 205, 50, 0.25)' : 'rgba(220, 20, 60, 0.25)'; return {...v,preFillColor: c,  }       })]    }}  onClick={area => this.handleClick(area)} onImageClick={event=>{this.handleOnImageClick(event)}}/> ;
+        const mapper =  <ImageMapperWeb  src={map} fillColor={'rgba(255, 255, 255, 0.2)'} lineWidth={0.00001}  width={1125}  imgWidth={12413} map={{   name: "my-map",areas: [...this.state.plotsMapListData.map((v)=>{ if(isNaN(v.name)){ return {...v,preFillColor: v.color } }  let c = (v.available)? 'rgba(50, 205, 50, 0.25)' : 'rgba(220, 20, 60, 0.25)'; return {...v,preFillColor: c,  }       })]    }}  onClick={area => this.handleClick(area)} onImageClick={event=>{this.handleOnImageClick(event)}}/> ;
         let k =  <div className="submitdrawing">
         <form onSubmit={this.handleFormSubmit}>
                <input type="text" 
@@ -165,13 +168,16 @@ putToDatabase = () => {
 
 
 
-            // <button onClick={this.putToDatabase}> Update to databse </button>
+           
          
             <div className="PlotsBody">
+               {popUp}
+              
+              
                 <div className="container"    > 
                     <div className="image-container"  >
                         <div className="inner-image-container">
-                            <PrismaZoom maxZoom={18} > 
+                            <PrismaZoom maxZoom={18} minZoom={1}> 
                             {mapper}
                             {/* <ImageMapperWeb  src={map} lineWidth={0.00001}  width={1125}  imgWidth={12413} map={{   name: "my-map",areas: [...A.plots .map((v)=>{ if(isNaN(v.name)){ return {...v,preFillColor: 'rgba(255,215,0,0.05)',  } }  let c = (v.available)? 'rgba(50, 205, 50, 0.25)' : 'rgba(220, 20, 60, 0.25)'; return {...v,preFillColor: c,  }       })]    }}  onClick={area => this.handleClick(area)} onImageClick={event=>{this.handleOnImageClick(event)}}/> ; */}
                               </PrismaZoom>
@@ -179,12 +185,16 @@ putToDatabase = () => {
                            {/* <div className="none"> {k}   {mapper}</div>   */}
                     
                          <Compass></Compass>
-                         <Pointer></Pointer>
+                         {/* <Pointer></Pointer> */}
                          <Logo></Logo>
                          <Share></Share>
+                         <MediaPlayList></MediaPlayList>
+                         <BottomNav></BottomNav>
                          {this.state.showCard? card : ''} 
                      </div>
+                     
                  </div>
+                
              </div>
         );
     }

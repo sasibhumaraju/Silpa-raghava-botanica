@@ -1,6 +1,6 @@
 .Pointer{
     position: absolute;
-    z-index: 999999;
+    z-index: 2;
     bottom: 20px;
     width: 100%;
     display: flex;
@@ -9,28 +9,28 @@
     display: flex;
     flex-direction: column;
     filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0,1));
-    animation: MoveUpDown 5s ease infinite;
-    /* background-color: red; */
-    width: 200px;
-   margin-left: calc(50% - 100px);
+    animation: MoveUpDown 5s ease linear;
+   /* background-color: red; */
+    width: 180px;
+    margin-left: calc(50% - 100px);
   
    
 }
 
 .body{
-      font-size: 11px;
-      font-weight: 600;
-      background-color: #ffeec2;;
-      /* background-color: green; */
-      width: 160px;
+  font-size: 9px;
+      font-weight: 500;
+    
+      background-color:#ffBe00;
+      width: 140px;
       height: 17px;
-      color: #362a82;;
-      color: black;
+    
+      color: rgb(0, 0, 0);
       /* color: black; */
-      padding: 4px 10px;
+      padding: 3px 6px;
       border-radius: 6px;
-      letter-spacing: 0.4px;
-      word-spacing: 1px;
+      letter-spacing: 1px;
+      /* word-spacing: 2px; */
       display: flex;
       align-items: center;
       justify-content: center;
@@ -39,11 +39,10 @@
       user-select: none; 
 }
 .hand{
-    width: 20px;
-    /* color: #ffbe00; */
+  
    
     margin: 5px;
-    width: 18px;
+    width: 15px;
 }
 
 @keyframes MoveUpDown {

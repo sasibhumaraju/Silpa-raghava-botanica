@@ -1,0 +1,14 @@
+.BottomNav {
+    width: min-content;
+    position: absolute;
+    bottom: 7px;
+    left: 0px;
+    width: 200px;
+    display: flex;
+    /* background-color: red; */
+    align-items: center;
+    justify-content: center;
+    z-index: 9999999;
+    margin-right: calc(50% - 100px);
+    margin-left: calc(50% - 100px);
+}

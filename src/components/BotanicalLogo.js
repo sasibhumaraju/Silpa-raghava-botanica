@@ -7,7 +7,7 @@ class BotanicalLogo extends React.Component {
     render () {
         return (
             <div className='BotanicalLogo'>
-                <img className='BotanicalLogo' src={logo}></img>
+                <img className='BotanicalLogoImage' src={logo}></img>
             </div>
         )
     }

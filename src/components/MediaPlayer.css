@@ -1,0 +1,38 @@
+.MediaPlayer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.MediaIcon {
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    background-color: white;
+    cursor: pointer;
+}
+
+.MediaIcon Img {
+    width: 21px;
+}
+
+.MediaPlayer  .MediaDescrition{
+    margin:2px 9px;
+    width: 70px;
+    /* background-color: red; */
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 12px;
+    letter-spacing: 01px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 5px black;
+    filter: drop-shadow(0px 0px 2px  black);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 5px 5px;
+}
