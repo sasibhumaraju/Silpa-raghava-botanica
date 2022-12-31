@@ -39,11 +39,12 @@
     display: flex;
     flex-wrap: wrap;
     /* overflow: scroll; */
-    width: 1190px;
+    max-width: 1190px;
     /* height: 600px; */
     justify-content: center;
     margin-bottom: 100px;
-    
+    /* min-width: 340px; */
+    /* background-color: red; */
 
 }
 .GalleryViewBodyCard {
@@ -92,3 +93,23 @@
     cursor: pointer;
     z-index: 999;
 }
+
+@media screen and (max-width: 1025px) {
+             
+}
+
+@media screen and (max-width: 768px) {
+    .GalleryViewBodyCard {
+        width: 200px;
+        height: 200px;
+        margin: 8px;  
+    }
+    .GalleryViewBodyImage {
+        width: 200px;
+        height: 200px;
+    }
+    .GalleryViewBodyImageDescrition { 
+        font-size: 11px;
+    }
+}
+
