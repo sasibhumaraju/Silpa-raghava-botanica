@@ -1,19 +1,18 @@
 import PlotsBody from './PlotsBody';
-
-import PlotCard from './components/PlotCard.js'
 import './App.css';
-import Pointer from './components/Pointer';
-import Compass from './components/Compass.js';
+import MobileScreen from './components/MobileScreen';
+import {isMobile} from 'react-device-detect';
+
 
 function App() {
-  const s = (window.innerWidth > Window.innerHeight)? {transform : 'rotate(180deg)'} : {transform : 'rotate(0deg)'};
+  
+  const desktopScreen = <PlotsBody></PlotsBody>
+  const mobileScreen = <MobileScreen></MobileScreen>
+  const body = isMobile? mobileScreen : desktopScreen
+
   return (
-   
     <div className="App" >
-    
-    <PlotsBody></PlotsBody>
-   
-     
+       {body}
     </div>
   
     

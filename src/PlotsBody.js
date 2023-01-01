@@ -27,6 +27,7 @@ import MediaPlayer from './components/MediaPlayer';
 import MediaPlayList from './components/MediaPlayList';
 import Gallery from './components/Gallery'
 import BottomNav from "./components/BottomNav";
+import Pointer2 from "./components/Pointer2";
 
 
 
@@ -178,7 +179,15 @@ class MyMap extends React.Component {
                     <div className="image-container"  >
                         <div className="inner-image-container">
                             <PrismaZoom maxZoom={18} minZoom={1}> 
+                            <div style={{ position: 'relative' }}>
                             {mapper}
+                            <Pointer></Pointer>
+                            <Pointer2></Pointer2>
+                             {/* <div style={{ position: 'absolute',zIndex:99999999, top: '400px', right: '250px', transform:'rotate(-70deg)', backgroundColor:'#ffBe00', textShadow: '2px 2px 4px #000000' }}>
+                             Tap on plot of your intrest
+                              </div>
+                              </div> */}
+                              </div>
                             {/* <ImageMapperWeb  src={map} lineWidth={0.00001}  width={1125}  imgWidth={12413} map={{   name: "my-map",areas: [...A.plots .map((v)=>{ if(isNaN(v.name)){ return {...v,preFillColor: 'rgba(255,215,0,0.05)',  } }  let c = (v.available)? 'rgba(50, 205, 50, 0.25)' : 'rgba(220, 20, 60, 0.25)'; return {...v,preFillColor: c,  }       })]    }}  onClick={area => this.handleClick(area)} onImageClick={event=>{this.handleOnImageClick(event)}}/> ; */}
                               </PrismaZoom>
                         </div>
