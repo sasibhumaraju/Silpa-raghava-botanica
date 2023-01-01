@@ -28,6 +28,7 @@ import MediaPlayList from './components/MediaPlayList';
 import Gallery from './components/Gallery'
 import BottomNav from "./components/BottomNav";
 import Pointer2 from "./components/Pointer2";
+import NumberMarker from "./components/NumberMarker";
 
 
 
@@ -183,6 +184,25 @@ class MyMap extends React.Component {
                             {mapper}
                             <Pointer></Pointer>
                             <Pointer2></Pointer2>
+                            <NumberMarker  markerNumber={1}
+                                             top ={555}
+                                             left= {470}></NumberMarker>
+
+                            <NumberMarker  markerNumber={2}
+                                             top ={470}
+                                             left= {350}></NumberMarker>                 
+                            <NumberMarker  markerNumber={3}
+                                             top ={610}
+                                             left= {220}></NumberMarker>    
+                            <NumberMarker  markerNumber={4}
+                                             top ={518}
+                                             left= {630}></NumberMarker>     
+                            <NumberMarker  markerNumber={5}
+                                              top ={500}
+                                              left= {610}></NumberMarker>  
+                            <NumberMarker  markerNumber={6}
+                                             top ={340}
+                                             left= {610}></NumberMarker>                                                                                                                                                                                                                                            
                              {/* <div style={{ position: 'absolute',zIndex:99999999, top: '400px', right: '250px', transform:'rotate(-70deg)', backgroundColor:'#ffBe00', textShadow: '2px 2px 4px #000000' }}>
                              Tap on plot of your intrest
                               </div>
